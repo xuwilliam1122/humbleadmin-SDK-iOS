@@ -1,0 +1,6 @@
+framework module humbleadminbase {
+  umbrella header "humbleadminbase.h"
+
+  export *
+  module * { export * }
+}
