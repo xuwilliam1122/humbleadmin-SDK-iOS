@@ -19,6 +19,8 @@ Pod::Spec.new do |s|
 
   s.source_files  = "iOS/Library/*.{h,a}"
   s.exclude_files = "iOS/Framework/*.*"
+  
+  s.vendored_libraries = "humbleadminbase.a"
 
   s.requires_arc = true
 
