@@ -21,5 +21,5 @@ Pod::Spec.new do |s|
   s.vendored_libraries = "libhumbleadminbase.a"
 
   s.requires_arc = true
-  s.prepare_command = "mv iOS/Library/libhumbleadminbase.h iOS/Library/libhumbleadminbase.a"
+#   s.prepare_command = "mv iOS/Library/libhumbleadminbase.h iOS/Library/libhumbleadminbase.a"
 end
