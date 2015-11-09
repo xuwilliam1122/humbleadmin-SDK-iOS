@@ -11,15 +11,14 @@ Pod::Spec.new do |s|
                    DESC
 
   s.license      = "MIT"
-  
   s.author       = { "李辰" => "wolichen0501@gmail.com" }
-
   s.source       = { :git => "https://github.com/RNTD/humbleadminbase.git", :tag => "0.0.1" }
 
 
   s.source_files  = "iOS/Library/*.h"
   s.public_header_files = "iOS/Library/*.h"
   
+  s.preserve_paths = ""iOS/Library/"
   s.vendored_libraries = "humbleadminbase.a"
 
   s.requires_arc = true
