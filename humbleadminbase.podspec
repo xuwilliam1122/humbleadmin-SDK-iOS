@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.public_header_files = "iOS/Library/*.h"
   
   s.preserve_paths = ""iOS/Library/"
-  s.vendored_libraries = "humbleadminbase.a"
+  s.vendored_libraries = "libhumbleadminbase.a"
 
   s.requires_arc = true
 
