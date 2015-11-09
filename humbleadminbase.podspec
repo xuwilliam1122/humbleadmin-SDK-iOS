@@ -15,11 +15,12 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/RNTD/humbleadminbase.git", :tag => "0.0.1" }
 
 
-  s.source_files  = "iOS/Library/*.{zip,h}"
+  s.source_files  = "iOS/Library/*.h"
   s.public_header_files = "iOS/Library/*.h"
-  
-  s.vendored_libraries = "libhumbleadminbase.a"
+
+  s.vendored_libraries = "iOS/Library/libhumbleadminbase.a"
 
   s.requires_arc = true
+  s.frameworks = "UIKit", "Foundation"
 #   s.prepare_command = "mv iOS/Library/libhumbleadminbase.h iOS/Library/libhumbleadminbase.a"
 end
