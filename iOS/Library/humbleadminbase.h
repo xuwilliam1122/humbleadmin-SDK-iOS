@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 
 @interface humbleadminbase : UIView
 {
@@ -50,7 +49,7 @@
 - (void)HABGetOpenID;
 
 /**
- *  必须有服务器获取 OpenID
+ *  必须由服务器获取 OpenID
  */
 - (void)HABGetOpenIDFromServer;
 
@@ -75,7 +74,11 @@
  */
 - (BOOL)HABSSOReturnToken:(NSURL *)openURL;
 
-
+/**
+ *  获取算子
+ *  @param  appID       网站申请时获取到的 AppID
+ */
+- (void)HABGetSecret:(NSString *)appID;
 
 /****************************** 工具方法 ***********************************/
 
@@ -97,7 +100,7 @@
 - (void)HABFetchInfor;
 
 /**
- *  设置一个白名单的 App ID,不设置的话会默认调用 appoen
+ *  设置一个白名单的 App ID,不设置的话会默认调用 “appone”
  *  @param  AppID       设置白名单的一个 AppID
  */
 - (void)HABSetWhiteListAppID:(NSString *)AppID;
