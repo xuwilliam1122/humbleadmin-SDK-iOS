@@ -22,5 +22,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = false
   s.frameworks = "UIKit", "Foundation"
+  s.xcconfig = { "OTHER_LDFLAGS" => "$(inherited) -ObjC -lz" }
 #   s.prepare_command = "mv iOS/Library/libhumbleadminbase.h iOS/Library/libhumbleadminbase.a"
 end
