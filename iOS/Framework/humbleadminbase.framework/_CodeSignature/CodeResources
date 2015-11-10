@@ -4,17 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/HABTrustyIDLogin.h</key>
-		<data>
-		D2yS5XWnbzzqDIQFOFXoYK5mjVA=
-		</data>
 		<key>Headers/humbleadminbase.h</key>
 		<data>
-		ernNb6WmUndrmCgKmKAB0iPJUvs=
+		/KLrKuSnMGVHsUNik4tSGghBwOA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XUFUYEd4hiQqmaMAjwz4zThxyc8=
+		A9REMkD6ogG1k801DmkM+tWcOAE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -23,13 +19,9 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/HABTrustyIDLogin.h</key>
-		<data>
-		D2yS5XWnbzzqDIQFOFXoYK5mjVA=
-		</data>
 		<key>Headers/humbleadminbase.h</key>
 		<data>
-		ernNb6WmUndrmCgKmKAB0iPJUvs=
+		/KLrKuSnMGVHsUNik4tSGghBwOA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
