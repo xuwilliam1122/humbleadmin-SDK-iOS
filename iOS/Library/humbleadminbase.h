@@ -8,58 +8,60 @@
 
 #import <UIKit/UIKit.h>
 
-@interface humbleadminbase : UIView
+typedef NS_ENUM(NSInteger, loginType)
 {
-}
+    link_login = 0,         // 短信链接登录
+    security_code_login = 1 // 验证码登录
+};
+
+
+@interface humbleadminbase : UIView
 
 /****************************** 初始化 ***********************************/
 
 /**
  *  初始化 TrustyID
  *  @param  appID           传入自身的 AppID
- *  @param  appSecret       传入由服务器获取的 AppSecret
  *  @return 返回初始化对象
  */
-- (id)init:(NSString *)appID appSecret:(NSString *)appSecret;
+- (id)init:(NSString *)appID;
 
 /****************************** 短信请求 ***********************************/
 
 /**
- *  发起短信链接登录的请求
+ *  可信 ID 登录的请求
  *  @param phoneNumber      传入手机号码
+ *  @param loginType        登录的请求类型
  */
-- (void)HABLinkLogin:(NSString *)phoneNumber;
+- (void)HABTrustyIDLogin:(NSString *)phoneNumber loginType:(loginType)loginType;
+
+/******************************* 验证 ************************************/
 
 /**
- *  发起短信验证码登录的请求
- *  @param phoneNumber      传入手机号码
+ *  验证码登录
+ *  @param securityCode      输入验证码
+ *  @return 返回验证码是否正确
  */
-- (void)HABFetchSecurityCode:(NSString *)phoneNumber;
+- (NSString *)HABSecurityCodeLogin:(NSString *)securityCode;
 
 /**
- *  在发起请求过程中，取消申请的方法
+ *  重置 Token
  */
-- (void)HABStopRequest;
+- (void)HABResetToken;
 
-/****************************** web OpenID ***********************************/
 
-/**
- *  获取 OpenID
- */
-- (void)HABGetOpenID;
 
-/**
- *  必须由服务器获取 OpenID
- */
-- (void)HABGetOpenIDFromServer;
 
+
+
+/* 下面这些是根 SSO 有关的方法接口，如果只单单有短信请求，上面那四个接口即可 */
 /****************************** SSO ***********************************/
 
 /**
  *  SSO 登录请求，由第三方 App 发出
- *  @param URLScheme    本地设置的 URL Type 即 openid
+ *  @param URLSchema    本地设置的 URL Type 即 openid
  */
-- (void)HABSSOLogin:(NSString *)URLScheme;
+- (void)HABSSOLogin:(NSString *)URLSchema;
 
 /**
  *  提供信息的 App 端返回到申请 Token 的第三方 App 的方法
@@ -74,42 +76,14 @@
  */
 - (BOOL)HABSSOReturnToken:(NSURL *)openURL;
 
-/**
- *  获取算子
- *  @param  appID       网站申请时获取到的 AppID
- */
-- (void)HABGetSecret:(NSString *)appID;
 
-/****************************** 工具方法 ***********************************/
-
-/**
- *  验证码登录
- *  @param securityCode      输入验证码
- *  @return 返回验证码是否正确
- */
-- (NSString *)HABSecurityCodeLogin:(NSString *)securityCode;
-
-/**
- *  重置 Token
- */
-- (void)HABResetToken;
-
-/**
- *  获取设备信息
- */
-- (void)HABFetchInfor;
+/****************************** 工具 ***********************************/
 
 /**
  *  设置一个白名单的 App ID,不设置的话会默认调用 “appone”
  *  @param  AppID       设置白名单的一个 AppID
  */
 - (void)HABSetWhiteListAppID:(NSString *)AppID;
-
-/**
- *  设置输出等级
- *  @param      LogLevel        传入的输出等级，目前有 3 级，越高输出信息越多，0 为不输出
- */
-- (void)HABSetLogLevel:(int)LogLevel;
 
 /**
  *  只有 SSO 可以调用的，主动查询 Token 的方法
