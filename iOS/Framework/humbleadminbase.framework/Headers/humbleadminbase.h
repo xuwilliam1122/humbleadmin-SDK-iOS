@@ -8,13 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+
+/**
+ *  登录类别
+ */
 typedef NS_ENUM(NSInteger, loginType)
 {
-    link_login = 0,         // 短信链接登录
-    security_code_login = 1 // 验证码登录
+    /// 短信链接登录
+    link_login = 0,
+    /// 验证码登录
+    security_code_login = 1
 };
 
-
+/// 接口类
 @interface humbleadminbase : UIView
 
 /****************************** 初始化 ***********************************/
