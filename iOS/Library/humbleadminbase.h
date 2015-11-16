@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, loginType)
  *  @param  appID           传入自身的 AppID
  *  @return 返回初始化对象
  */
-- (id)init:(NSString *)appID;
++ (humbleadminbase *)sharedHumbleadminbase:(NSString *)appID;
 
 /****************************** 短信请求 ***********************************/
 
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, loginType)
  *  @param phoneNumber      传入手机号码
  *  @param loginType        登录的请求类型
  */
-- (void)HABTrustyIDLogin:(NSString *)phoneNumber loginType:(loginType)loginType;
++ (void)HABTrustyIDLogin:(NSString *)phoneNumber loginType:(loginType)loginType;
 
 /******************************* 验证 ************************************/
 
@@ -48,12 +48,12 @@ typedef NS_ENUM(NSInteger, loginType)
  *  @param securityCode      输入验证码
  *  @return 返回验证码是否正确
  */
-- (NSString *)HABSecurityCodeLogin:(NSString *)securityCode;
++ (NSString *)HABSecurityCodeLogin:(NSString *)securityCode;
 
 /**
  *  重置 Token
  */
-- (void)HABResetToken;
++ (void)HABResetToken;
 
 
 
@@ -67,20 +67,20 @@ typedef NS_ENUM(NSInteger, loginType)
  *  SSO 登录请求，由第三方 App 发出
  *  @param URLSchema    本地设置的 URL Type 即 openid
  */
-- (void)HABSSOLogin:(NSString *)URLSchema;
++ (void)HABSSOLogin:(NSString *)URLSchema;
 
 /**
  *  提供信息的 App 端返回到申请 Token 的第三方 App 的方法
  *  @param openURL      传入的 openURL
  */
-- (void)HABReturnApp:(NSURL *)openURL;
++ (void)HABReturnApp:(NSURL *)openURL;
 
 /**
  *  第三方客户端 在获取到 SSO 返回信息后调用，从而到服务器进行验证
  *  @param openURL      传入的 openURL
  *  @return 返回的是 是否可以进行 SSO
  */
-- (BOOL)HABSSOReturnToken:(NSURL *)openURL;
++ (BOOL)HABSSOReturnToken:(NSURL *)openURL;
 
 
 /****************************** 工具 ***********************************/
@@ -89,12 +89,12 @@ typedef NS_ENUM(NSInteger, loginType)
  *  设置一个白名单的 App ID,不设置的话会默认调用 “appone”
  *  @param  AppID       设置白名单的一个 AppID
  */
-- (void)HABSetWhiteListAppID:(NSString *)AppID;
++ (void)HABSetWhiteListAppID:(NSString *)AppID;
 
 /**
  *  只有 SSO 可以调用的，主动查询 Token 的方法
  *  @return     返回 Token 或 说明的字符串
  */
-- (NSString *)HABFetchSSOToken;
++ (NSString *)HABFetchSSOToken;
 
 @end
