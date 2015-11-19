@@ -38,8 +38,11 @@ typedef NS_ENUM(NSInteger, loginType)
  *  可信 ID 登录的请求
  *  @param phoneNumber      传入手机号码
  *  @param loginType        登录的请求类型
+ *  @param status           block 中返回的请求状态
  */
-+ (void)HABTrustyIDLogin:(NSString *)phoneNumber loginType:(loginType)loginType;
++ (void)HABTrustyIDLogin:(NSString *)phoneNumber loginType:(loginType)loginType completion:(void(^)(NSString *status))status;
+
+
 
 /******************************* 验证 ************************************/
 
@@ -80,7 +83,7 @@ typedef NS_ENUM(NSInteger, loginType)
  *  @param openURL      传入的 openURL
  *  @return 返回的是 是否可以进行 SSO
  */
-+ (BOOL)HABSSOReturnToken:(NSURL *)openURL;
++ (void)HABSSOReturnToken:(NSURL *)openURL completion:(void(^)(NSString *token))token;
 
 
 /****************************** 工具 ***********************************/
@@ -90,11 +93,5 @@ typedef NS_ENUM(NSInteger, loginType)
  *  @param  AppID       设置白名单的一个 AppID
  */
 + (void)HABSetWhiteListAppID:(NSString *)AppID;
-
-/**
- *  只有 SSO 可以调用的，主动查询 Token 的方法
- *  @return     返回 Token 或 说明的字符串
- */
-+ (NSString *)HABFetchSSOToken;
 
 @end
