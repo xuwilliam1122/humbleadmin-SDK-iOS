@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 /**
  *  登录类别
  */
@@ -28,9 +27,11 @@ typedef NS_ENUM(NSInteger, loginType)
 /**
  *  初始化 TrustyID
  *  @param  appID           传入自身的 AppID
+ *  @param  appSecret       传入自身的 AppSecret
  *  @return 返回初始化对象
  */
-+ (humbleadminbase *)sharedHumbleadminbase:(NSString *)appID;
++ (humbleadminbase *)sharedHumbleadminbase:(NSString *)appID appSecret:(NSString *)appSecret;
+
 
 /****************************** 短信请求 ***********************************/
 
@@ -40,7 +41,9 @@ typedef NS_ENUM(NSInteger, loginType)
  *  @param loginType        登录的请求类型
  *  @param status           block 中返回的请求状态
  */
-+ (void)HABTrustyIDLogin:(NSString *)phoneNumber loginType:(loginType)loginType completion:(void(^)(NSString *status))status;
++ (void)HABTrustyIDLogin:(NSString *)phoneNumber
+               loginType:(loginType)loginType
+              completion:(void(^)(NSString *status))status;
 
 
 
@@ -52,6 +55,7 @@ typedef NS_ENUM(NSInteger, loginType)
  *  @return 返回验证码是否正确
  */
 + (NSString *)HABSecurityCodeLogin:(NSString *)securityCode;
+
 
 /**
  *  重置 Token
