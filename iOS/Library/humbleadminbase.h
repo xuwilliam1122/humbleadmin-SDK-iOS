@@ -54,8 +54,7 @@ typedef NS_ENUM(NSInteger, loginType)
  *  @param securityCode      输入验证码
  *  @return 返回验证码是否正确
  */
-+ (NSString *)HABSecurityCodeLogin:(NSString *)securityCode;
-
++ (void)HABSecurityCodeLogin:(NSString *)securityCode completion:(void (^)(NSString *status))status;
 
 /**
  *  重置 Token
