@@ -51,8 +51,8 @@ typedef NS_ENUM(NSInteger, loginType)
 
 /**
  *  验证码登录
- *  @param securityCode      输入验证码
- *  @return 返回验证码是否正确
+ *  @param securityCode     输入验证码
+ *  @param status           block 中返回信息
  */
 + (void)HABSecurityCodeLogin:(NSString *)securityCode completion:(void (^)(NSString *status))status;
 
@@ -80,7 +80,7 @@ typedef NS_ENUM(NSInteger, loginType)
 /**
  *  第三方客户端 在获取到 SSO 返回信息后调用，从而到服务器进行验证
  *  @param openURL      传入的 openURL
- *  @return 返回的是 是否可以进行 SSO
+ *  @param token        block 中返回 token
  */
 + (void)HABSSOReturnToken:(NSURL *)openURL completion:(void(^)(NSString *token))token;
 
