@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "humbleadmin-SDK-iOS"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.homepage     = "http://open.humbleadmin.io/"
   s.summary      = "trustyID SDK"
   
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
   s.author       = { "李辰" => "wolichen0501@gmail.com" }
-  s.source       = { :git => "https://github.com/RNTD/humbleadmin-SDK-iOS.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/RNTD/humbleadmin-SDK-iOS.git", :tag => "0.2.0" }
 
 
   s.source_files  = "iOS/Library/*.h"
