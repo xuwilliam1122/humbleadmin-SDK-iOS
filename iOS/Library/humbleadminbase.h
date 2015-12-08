@@ -11,13 +11,12 @@
 /**
  *  登录类别
  */
-typedef NS_ENUM(NSInteger, loginType)
-{
+typedef enum{
     /// 短信链接登录
     link_login = 0,
     /// 验证码登录
     security_code_login = 1
-};
+}loginType;
 
 /// 接口类
 @interface humbleadminbase : UIView
@@ -28,9 +27,8 @@ typedef NS_ENUM(NSInteger, loginType)
  *  初始化 TrustyID
  *  @param  appID           传入自身的 AppID
  *  @param  appSecret       传入自身的 AppSecret
- *  @return 返回初始化对象
  */
-+ (humbleadminbase *)sharedHumbleadminbase:(NSString *)appID appSecret:(NSString *)appSecret;
++ (void)initHumbleadminbase:(NSString *)appID appSecret:(NSString *)appSecret;
 
 
 /****************************** 短信请求 ***********************************/
