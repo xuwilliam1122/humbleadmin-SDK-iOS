@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-/**
- *  登录类别
- */
-typedef enum{
+
+typedef NS_ENUM(NSInteger, LoginType)
+{
     /// 短信链接登录
-    link_login = 0,
+    kLinkLogin = 0,
     /// 验证码登录
-    security_code_login = 1
-}loginType;
+    kSecurityCodeLogin = 1
+};
+
 
 /// 接口类
 @interface humbleadminbase : NSObject
@@ -40,7 +40,7 @@ typedef enum{
  *  @param status           block 中返回的请求状态
  */
 + (void)HABTrustyIDLogin:(NSString *)phoneNumber
-               loginType:(loginType)loginType
+               loginType:(LoginType)loginType
               completion:(void(^)(NSString *status))status;
 
 
