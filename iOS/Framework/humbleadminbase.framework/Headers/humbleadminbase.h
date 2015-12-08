@@ -19,7 +19,7 @@ typedef enum{
 }loginType;
 
 /// 接口类
-@interface humbleadminbase : UIView
+@interface humbleadminbase : NSObject
 
 /****************************** 初始化 ***********************************/
 
