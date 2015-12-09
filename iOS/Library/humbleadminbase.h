@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-
+/// 登录类型
 typedef NS_ENUM(NSInteger, LoginType)
 {
     /// 短信链接登录
@@ -20,16 +20,6 @@ typedef NS_ENUM(NSInteger, LoginType)
 
 /// 接口类
 @interface humbleadminbase : NSObject
-
-/****************************** 初始化 ***********************************/
-
-/**
- *  初始化 TrustyID
- *  @param  appID           传入自身的 AppID
- *  @param  appSecret       传入自身的 AppSecret
- */
-+ (void)initHumbleadminbase:(NSString *)appID appSecret:(NSString *)appSecret;
-
 
 /****************************** 短信请求 ***********************************/
 

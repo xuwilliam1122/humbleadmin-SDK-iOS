@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/HABAuthConfig.h</key>
+		<data>
+		WHY040rMSvWVfqyBQz61HVxze3I=
+		</data>
 		<key>Headers/humbleadminbase.h</key>
 		<data>
-		QhR0jjjh4KExVIB2nMDBX9ZQezY=
+		Z6TrZ1DOWCMi6ZuD0M02pzVVbxk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q+QgFM2OfQ93veMe9UxQWOwNPZc=
+		XH/o01YrzqbDdqmYAD/afqTOMLg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -19,9 +23,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/HABAuthConfig.h</key>
+		<data>
+		WHY040rMSvWVfqyBQz61HVxze3I=
+		</data>
 		<key>Headers/humbleadminbase.h</key>
 		<data>
-		QhR0jjjh4KExVIB2nMDBX9ZQezY=
+		Z6TrZ1DOWCMi6ZuD0M02pzVVbxk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
