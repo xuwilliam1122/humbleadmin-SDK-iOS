@@ -16,16 +16,8 @@
  *
  *  @param appID     appID
  *  @param appSercet appSercet
- *  @param appSchema appSchema
  */
-+ (void)initAuthConfig:(NSString *)appID appSercet:(NSString *)appSercet appSchema:(NSString *)appSchema;
-
-/**
- *  设置 App 自身的 AppID
- *
- *  @param appID 由服务器上抄录下来的 AppID 值
- */
-+ (void)setAppID:(NSString *)appID;
++ (void)setAppID:(NSString *)appID appSercet:(NSString *)appSercet;
 
 /**
  *  获取 AppID 值
@@ -33,6 +25,14 @@
  *  @return AppID 值
  */
 + (NSString *)getAppID;
+
+
+/**
+ *  获取 App Secret 值
+ *
+ *  @return 返回 App 的算子值
+ */
++ (NSString *)getAppSecret;
 
 /**
  *  设置 App 自身的 URL Schema
@@ -48,18 +48,6 @@
  */
 + (NSString *)getAppSchema;
 
-/**
- *  设置 App 的算子
- *
- *  @param appSecret 由服务器上抄录下来的 App Secret
- */
-+ (void)setAppSecret:(NSString *)appSecret;
 
-/**
- *  获取 App Secret 值
- *
- *  @return 返回 App 的算子值
- */
-+ (NSString *)getAppSecret;
 
 @end
