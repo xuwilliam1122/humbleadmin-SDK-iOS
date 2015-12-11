@@ -4,36 +4,44 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/HABAuthConfig.h</key>
+		<key>Headers/Trusty.h</key>
 		<data>
-		lyGMj1bOZXb5HZzyjD7NzIdqZmI=
+		0lf9HhaTmPX32eZHfjj25Hy54CU=
 		</data>
-		<key>Headers/humbleadminbase.h</key>
+		<key>Headers/TrustySMS.h</key>
 		<data>
-		Z6TrZ1DOWCMi6ZuD0M02pzVVbxk=
+		Wg87TsQ7bmJdpzlRRqe0/iZSsK4=
+		</data>
+		<key>Headers/TrustySso.h</key>
+		<data>
+		U1U1H23Z5hiSV9OY4LyUCO5pNd0=
+		</data>
+		<key>Headers/authConfig.h</key>
+		<data>
+		cNF0ZTMKuQZEu5Y10kooxttAyKc=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		XH/o01YrzqbDdqmYAD/afqTOMLg=
 		</data>
-		<key>Modules/module.modulemap</key>
-		<data>
-		aXxmZNcxfobRaUw6usaf5gMh1t0=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/HABAuthConfig.h</key>
+		<key>Headers/Trusty.h</key>
 		<data>
-		lyGMj1bOZXb5HZzyjD7NzIdqZmI=
+		0lf9HhaTmPX32eZHfjj25Hy54CU=
 		</data>
-		<key>Headers/humbleadminbase.h</key>
+		<key>Headers/TrustySMS.h</key>
 		<data>
-		Z6TrZ1DOWCMi6ZuD0M02pzVVbxk=
+		Wg87TsQ7bmJdpzlRRqe0/iZSsK4=
 		</data>
-		<key>Modules/module.modulemap</key>
+		<key>Headers/TrustySso.h</key>
 		<data>
-		aXxmZNcxfobRaUw6usaf5gMh1t0=
+		U1U1H23Z5hiSV9OY4LyUCO5pNd0=
+		</data>
+		<key>Headers/authConfig.h</key>
+		<data>
+		cNF0ZTMKuQZEu5Y10kooxttAyKc=
 		</data>
 	</dict>
 	<key>rules</key>

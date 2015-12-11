@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-/// 固定属性类 所有值由服务器抄录过来
-@interface HABAuthConfig : NSObject
+/// 固定属性类,所有值由服务器抄录过来,第一时间传入即可
+@interface authConfig : NSObject
 
 /**
  *  启动项目第一时间初始化这里，在此处传入由服务器获取到的信息
