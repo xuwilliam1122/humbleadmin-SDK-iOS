@@ -43,9 +43,4 @@
 + (void)verify:(NSString *)code
     completion:(void(^)(NSString *status))status;
 
-
-
-
-
-
 @end
