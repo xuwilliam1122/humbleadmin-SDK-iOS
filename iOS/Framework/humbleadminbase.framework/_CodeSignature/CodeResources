@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/AuthConfig.h</key>
+		<data>
+		bDx19j1bMouTTR4Nmcz09ASHb10=
+		</data>
 		<key>Headers/Trusty.h</key>
 		<data>
 		0lf9HhaTmPX32eZHfjj25Hy54CU=
@@ -16,17 +20,17 @@
 		<data>
 		U1U1H23Z5hiSV9OY4LyUCO5pNd0=
 		</data>
-		<key>Headers/authConfig.h</key>
-		<data>
-		cNF0ZTMKuQZEu5Y10kooxttAyKc=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		XH/o01YrzqbDdqmYAD/afqTOMLg=
+		C8qlW3J/M56DFNy5+CXHH/4C1Q4=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/AuthConfig.h</key>
+		<data>
+		bDx19j1bMouTTR4Nmcz09ASHb10=
+		</data>
 		<key>Headers/Trusty.h</key>
 		<data>
 		0lf9HhaTmPX32eZHfjj25Hy54CU=
@@ -38,10 +42,6 @@
 		<key>Headers/TrustySso.h</key>
 		<data>
 		U1U1H23Z5hiSV9OY4LyUCO5pNd0=
-		</data>
-		<key>Headers/authConfig.h</key>
-		<data>
-		cNF0ZTMKuQZEu5Y10kooxttAyKc=
 		</data>
 	</dict>
 	<key>rules</key>

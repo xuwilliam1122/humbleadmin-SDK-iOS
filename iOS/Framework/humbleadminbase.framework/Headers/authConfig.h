@@ -1,5 +1,5 @@
 //
-//  HABAuthConfig.h
+//  AuthConfig.h
 //  humbleadminbase
 //
 //  Created by HRWY on 15/12/9.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /// 固定属性类,所有值由服务器抄录过来,第一时间传入即可
-@interface authConfig : NSObject
+@interface AuthConfig : NSObject
 
 /**
  *  启动项目第一时间初始化这里，在此处传入由服务器获取到的信息
