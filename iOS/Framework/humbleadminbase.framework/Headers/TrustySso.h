@@ -15,10 +15,8 @@
 
 /**
  *  SSO 登录请求
- *
- *  @param urlSchema 本地 URL Type 中设置的 装有本 SDK 的其他项目
  */
-+ (void)loginBySso:(NSString *)urlSchema;
++ (void)loginBySso;
 
 
 /**
