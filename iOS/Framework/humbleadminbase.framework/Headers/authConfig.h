@@ -15,9 +15,9 @@
  *  启动项目第一时间初始化这里，在此处传入由服务器获取到的信息
  *
  *  @param appID     appID
- *  @param appSercet appSercet
+ *  @param appSecret appSecret
  */
-+ (void)setAppID:(NSString *)appID appSercet:(NSString *)appSercet;
++ (void)setAppID:(NSString *)appID appSecret:(NSString *)appSecret;
 
 /**
  *  获取 AppID 值
