@@ -23,7 +23,6 @@
 + (void)authenticateWithSMSCode:(NSString *)phoneNumber
                      completion:(void(^)(NSString *status))status;
 
-
 /**
  *  短信链接登录请求
  *
@@ -32,7 +31,6 @@
  */
 + (void)authenticateWithSMSURL:(NSString *)phoneNumber
                     completion:(void(^)(NSString *status))status;
-
 
 /**
  *  验证码验证的请求

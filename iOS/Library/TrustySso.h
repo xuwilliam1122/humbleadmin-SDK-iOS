@@ -18,14 +18,12 @@
  */
 + (void)loginBySso;
 
-
 /**
  *  携带信息并跳回进行 SSO 登录请求的 App
  *
  *  @param openURL SSO 登录请求时传过来的 openURL
  */
 + (void)returnRequestApp:(NSURL *)openURL;
-
 
 /**
  *  验证 SSO 登录
@@ -35,13 +33,11 @@
  */
 + (void)verifySSO:(NSURL *)openURL completion:(void(^)(NSString *token))token;
 
-
 /**
  *  在 SDK 中设置 SSO 登录白名单
  *
  *  @param AppSchema 在白名单中添加的 App Schema
  */
 + (void)setWhiteList:(NSString *)AppSchema;
-
 
 @end

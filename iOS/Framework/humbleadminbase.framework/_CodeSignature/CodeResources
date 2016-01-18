@@ -10,15 +10,23 @@
 		</data>
 		<key>Headers/Trusty.h</key>
 		<data>
-		0lf9HhaTmPX32eZHfjj25Hy54CU=
+		El9oySxIFGBgm8JrEwv/g02AgJw=
+		</data>
+		<key>Headers/TrustyRegistration.h</key>
+		<data>
+		S/JNnMA+bX+Uq/mKQxzavueuml4=
 		</data>
 		<key>Headers/TrustySMS.h</key>
 		<data>
-		td6OdbX1bV10uVvhgDKgGZB61OY=
+		2Y7EA2/yBZuEKznXmxfCOQZVfkg=
+		</data>
+		<key>Headers/TrustySession.h</key>
+		<data>
+		xAou96Qi4RmkMCmpNkk5v+X12ao=
 		</data>
 		<key>Headers/TrustySso.h</key>
 		<data>
-		m3dZTY5ud2OGFm5fVZIWnvGgPBQ=
+		QYdF+4ZP89D4+HjBbp0XGWTslIc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -33,15 +41,23 @@
 		</data>
 		<key>Headers/Trusty.h</key>
 		<data>
-		0lf9HhaTmPX32eZHfjj25Hy54CU=
+		El9oySxIFGBgm8JrEwv/g02AgJw=
+		</data>
+		<key>Headers/TrustyRegistration.h</key>
+		<data>
+		S/JNnMA+bX+Uq/mKQxzavueuml4=
 		</data>
 		<key>Headers/TrustySMS.h</key>
 		<data>
-		td6OdbX1bV10uVvhgDKgGZB61OY=
+		2Y7EA2/yBZuEKznXmxfCOQZVfkg=
+		</data>
+		<key>Headers/TrustySession.h</key>
+		<data>
+		xAou96Qi4RmkMCmpNkk5v+X12ao=
 		</data>
 		<key>Headers/TrustySso.h</key>
 		<data>
-		m3dZTY5ud2OGFm5fVZIWnvGgPBQ=
+		QYdF+4ZP89D4+HjBbp0XGWTslIc=
 		</data>
 	</dict>
 	<key>rules</key>

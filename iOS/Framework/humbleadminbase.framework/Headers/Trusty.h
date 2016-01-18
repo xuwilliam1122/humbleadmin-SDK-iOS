@@ -28,9 +28,15 @@
 + (NSString *)getAuthToken;
 
 /**
+ *  获取当前的 UserID 信息
+ *
+ *  @return 返回当前的 UserID 字符串
+ */
++ (NSString *)getUserID;
+
+/**
  *  登出，并清除获取到的 AuthToken
  */
 + (void)logout;
-
 
 @end
