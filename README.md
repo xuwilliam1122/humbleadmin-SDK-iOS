@@ -19,7 +19,7 @@
 |README.md|说明文档。|
 
 ##使用说明##
-`SDK`共有四个头文件，分别为`AuthConfig.h` `Trusty.h` `TrustySMS.h` `TrustySso.h`</br>
+`SDK` 共有八个头文件，分别为 `AuthConfig.h` `Trusty.h` `TrustySMS.h` `TrustySso.h` `TrustyRegistration.h` `TrustySession.h` `TrustyUserInfo.h` `TrustyForgotPassword.h`</br>
 ###AuthConfig.h###
 	这个类中需要用户把从网站上获取到的项目信息在第一时间传给SDK。
 |名称|使用方法|
@@ -36,6 +36,7 @@
 |---|---|
 |+getPhoneNumber|获取申请`可信ID`登录的手机号码。|
 |+getAuthToken|获取已经获得的 AuthToken 信息。|
+|+getUserID|获取当前登录用户的 UserID 。|
 |+logout |登出`可信ID`。|
 
 ###TrustySMS.h###
@@ -55,6 +56,32 @@
 |+returnRequestApp:|`友好 App`放执行的跳回方法，只要传入获取到的`openURL`信息即可。|
 |+verifySSO:completion:|由`友好 App`跳回时执行的方法，只要传入获取到的`openURL`信息即可，返回验证后所获取到的信息，正确即可获取`AuthToken`,失败返回失败信息。|
 |+setWhiteList:|传入白名单到`SDK`，即`友好 App`的`App Schema`.|
+
+###TrustyRegistration.h###
+	这个类是用户在客户端上注册所用的接口类，提供了 可信ID 用户注册的功能。
+|名称|使用方法|
+|---|---|
+|+registrationWithUserName:password:completion:|通过传入注册的用户名（手机号码或邮箱）、密码来进行用户注册，返回注册请求是否成功的状态。|
+	
+###TrustySession.h###
+	这个类是 Trusty.h 的子类，它实现了终端用户使用注册的用户名和密码进行登录的请求接口类。
+|名称|使用方法|
+|---|---|
+|+sessionWithUserName:password:completion:|通过传入已经注册过的用户名及正确的密码进行登录的接口，返回登录请求是否成功的状态。|
+
+###TrustyUserInfo.h###
+	这个类是 Trusty.h 的子类，它实现了用户进行用户信息设置和用户信息获取的接口方法，要调用这两个接口的前提是用户必须处于登录状态。
+|名称|使用方法|
+|---|---|
+|+getUserInfo:|获取当前用户的用户信息接口，调用该接口，用户信息会在返回值中获取到。|
+|+setUserInfo:completion:|设置当前用户的用户信息接口，传入用户信息后会在返回值中返回设置用户信息是否成功的状态。|
+
+###TrustyForgotPassword.h###
+	这个类是 Trusty.h 的子类，它实现了用户重置密码的功能。
+|名称|使用方法|
+|---|---|
+|+forgotPassword:completion:|通过传入用户账号，进行密码重置的申请，返回重置申请是否成功的状态，并且会对申请重置的用户名是手机号还是邮箱进行区分，返回验证码。|
+|+resetPassword:code:completion:|通过返回的验证码和新密码设置，进行密码重置申请，返回修改密码是否成功的状态。|
 
 
  
