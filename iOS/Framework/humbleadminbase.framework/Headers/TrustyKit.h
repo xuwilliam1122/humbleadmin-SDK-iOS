@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  可信 ID UI 接口
+ */
 @interface TrustyKit : NSObject
 
 /**
