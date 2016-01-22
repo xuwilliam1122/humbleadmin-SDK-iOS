@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Trusty.h"
 
+/**
+ *  用户使用用户、密码登录类偶
+ */
 @interface TrustySession : Trusty
 
 /**

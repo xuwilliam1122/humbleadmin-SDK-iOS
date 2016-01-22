@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  用户注册类
+ */
 @interface TrustyRegistration : NSObject
 
 /**

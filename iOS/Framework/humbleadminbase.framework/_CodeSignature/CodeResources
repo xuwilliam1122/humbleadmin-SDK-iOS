@@ -12,9 +12,17 @@
 		<data>
 		El9oySxIFGBgm8JrEwv/g02AgJw=
 		</data>
+		<key>Headers/TrustyForgotPassword.h</key>
+		<data>
+		mOL42arIixEk60NdZXdgVZAI1hQ=
+		</data>
+		<key>Headers/TrustyKit.h</key>
+		<data>
+		91KhxxasTheQddZe04g9Mcuw4NY=
+		</data>
 		<key>Headers/TrustyRegistration.h</key>
 		<data>
-		S/JNnMA+bX+Uq/mKQxzavueuml4=
+		/lkJQ8QqTLdnnwWg3cVJo6rWIlY=
 		</data>
 		<key>Headers/TrustySMS.h</key>
 		<data>
@@ -22,11 +30,15 @@
 		</data>
 		<key>Headers/TrustySession.h</key>
 		<data>
-		xAou96Qi4RmkMCmpNkk5v+X12ao=
+		bXynAybrCn8aroz5DN2N7C6JGLw=
 		</data>
 		<key>Headers/TrustySso.h</key>
 		<data>
 		QYdF+4ZP89D4+HjBbp0XGWTslIc=
+		</data>
+		<key>Headers/TrustyUserInfo.h</key>
+		<data>
+		m1PxJ1cCeBfaV7BcY1MXWfeL1uU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -43,9 +55,17 @@
 		<data>
 		El9oySxIFGBgm8JrEwv/g02AgJw=
 		</data>
+		<key>Headers/TrustyForgotPassword.h</key>
+		<data>
+		mOL42arIixEk60NdZXdgVZAI1hQ=
+		</data>
+		<key>Headers/TrustyKit.h</key>
+		<data>
+		91KhxxasTheQddZe04g9Mcuw4NY=
+		</data>
 		<key>Headers/TrustyRegistration.h</key>
 		<data>
-		S/JNnMA+bX+Uq/mKQxzavueuml4=
+		/lkJQ8QqTLdnnwWg3cVJo6rWIlY=
 		</data>
 		<key>Headers/TrustySMS.h</key>
 		<data>
@@ -53,11 +73,15 @@
 		</data>
 		<key>Headers/TrustySession.h</key>
 		<data>
-		xAou96Qi4RmkMCmpNkk5v+X12ao=
+		bXynAybrCn8aroz5DN2N7C6JGLw=
 		</data>
 		<key>Headers/TrustySso.h</key>
 		<data>
 		QYdF+4ZP89D4+HjBbp0XGWTslIc=
+		</data>
+		<key>Headers/TrustyUserInfo.h</key>
+		<data>
+		m1PxJ1cCeBfaV7BcY1MXWfeL1uU=
 		</data>
 	</dict>
 	<key>rules</key>
