@@ -48,6 +48,19 @@
  */
 + (NSString *)getAppSchema;
 
+/**
+ *  设置 App 自身的 ServerPost
+ *
+ *  @param uscServerPost 由网站获取的 USCServerPost 值传入到 SDK
+ */
++ (void)setUSCServerPort:(NSString *)uscServerPost;
+
+/**
+ *  获取 App ServerPost 值
+ *
+ *  @return App ServerPost 值
+ */
++ (NSString *)getUSCServerPort;
 
 
 @end
