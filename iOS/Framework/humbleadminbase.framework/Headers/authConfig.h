@@ -49,18 +49,18 @@
 + (NSString *)getAppSchema;
 
 /**
- *  设置 App 自身的 ServerPost
+ *  设置 App 自身的 USCOpenIDPort
  *
- *  @param uscServerPost 由网站获取的 USCServerPost 值传入到 SDK
+ *  @param USCOpenIDPort 由网站获取的 USC OpenID Port 值传入到 SDK
  */
-+ (void)setUSCServerPort:(NSString *)uscServerPost;
++ (void)setUSCOpenIDPort:(NSString *)USCOpenIDPort;
 
 /**
- *  获取 App ServerPost 值
+ *  获取 USC OpenID Port 值
  *
- *  @return App ServerPost 值
+ *  @return USC OpenID Port 值
  */
-+ (NSString *)getUSCServerPort;
++ (NSString *)getUSCOpenIDPort;
 
 
 @end

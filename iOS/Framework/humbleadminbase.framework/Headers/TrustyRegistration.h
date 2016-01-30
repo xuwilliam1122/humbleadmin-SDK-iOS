@@ -24,4 +24,13 @@
                         password:(NSString *)password
                       completion:(void(^)(NSString *status))status;
 
+/**
+ *  用户注册后用户激活
+ *
+ *  @param code   收到的验证码
+ *  @param status 返回验证状态
+ */
++ (void)registrationVerify:(NSString *)code
+                completion:(void (^)(NSString *status))status;
+
 @end

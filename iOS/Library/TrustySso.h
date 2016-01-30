@@ -28,7 +28,7 @@
 /**
  *  验证 SSO 登录
  *
- *  @param openURL 向第三方 App 请求 SSO 登录是，跳回 App 所携带的 openURL 信息
+ *  @param openURL 向第三方 App 请求 SSO 登录时，跳回 App 所携带的 openURL 信息
  *  @param token   返回 SSO 登录所获取到的 AuthToken
  */
 + (void)verifySSO:(NSURL *)openURL completion:(void(^)(NSString *token))token;
