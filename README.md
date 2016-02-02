@@ -15,11 +15,12 @@
 |doc|本项目`API`,进入文件夹双击`index.html`查阅。|
 |humbleadmin-SDK-iOS.podspec|支持`cocoapods`引用的项目文件。|
 |iOS|`SDK`存放位置，`iOS/Framework`下即为`SDK`。|
+|humbleadmin-sdk-ios_使用说明|`SDK` 使用的快速入门使用说明。|
 |LICENSE|许可证书。|
 |README.md|说明文档。|
 
 ##使用说明##
-`SDK` 共有八个头文件，分别为 `AuthConfig.h` `Trusty.h` `TrustySMS.h` `TrustySso.h` `TrustyRegistration.h` `TrustySession.h` `TrustyUserInfo.h` `TrustyForgotPassword.h`</br>
+`SDK` 共有九个头文件，分别为 `AuthConfig.h` `Trusty.h` `TrustySMS.h` `TrustySso.h` `TrustyRegistration.h` `TrustySession.h` `TrustyUserInfo.h` `TrustyForgotPassword.h` `TrustyKit`</br>
 ###AuthConfig.h###
 	这个类中需要用户把从网站上获取到的项目信息在第一时间传给SDK。
 |名称|使用方法|
@@ -28,7 +29,9 @@
 |+getAppID	|获取 AppID。|
 |+getAppSecret|获取 AppSecret。|
 |+setAppSchema:|设置 AppSchema。|
-|+getAppSchema	|获取 AppSchema。|
+|+getAppSchema|获取 AppSchema。|
+|+setUSCOpenIDPort:|设置 USC OpenID 端口|
+|+getUSCOpenIDPort|获取 USC OpenID 端口|
 
 ###Trusty.h###
 	这个类是 TrustySMS.h 和 TrustySso.h 的父类，它记录了当前请求 可信ID 登录的手机号码和获取到的 AuthToken ，并且实现了 可信ID 的登出功能
@@ -62,6 +65,7 @@
 |名称|使用方法|
 |---|---|
 |+registrationWithUserName:password:completion:|通过传入注册的用户名（手机号码或邮箱）、密码来进行用户注册，返回注册请求是否成功的状态。|
+|+registrationVerify:completion:|输入注册成功之后返回的验证码，进行的账户验证，并激活接口。返回激活申请是否成功的状态。|
 	
 ###TrustySession.h###
 	这个类是 Trusty.h 的子类，它实现了终端用户使用注册的用户名和密码进行登录的请求接口类。
@@ -83,6 +87,14 @@
 |+forgotPassword:completion:|通过传入用户账号，进行密码重置的申请，返回重置申请是否成功的状态，并且会对申请重置的用户名是手机号还是邮箱进行区分，返回验证码。|
 |+resetPassword:code:completion:|通过返回的验证码和新密码设置，进行密码重置申请，返回修改密码是否成功的状态。|
 
+###TrustyKit.h###
+	这个类是 可信ID 的 UI 类，调用里面的方法，会自动绘制 UI 界面，来实现相对应的接口功能。
+|名称|使用方法|
+|---|---|
+|+loginWithDefaultView|调用这个方法，会打开一个用户名、密码登录的界面，可以进行用户名、密码登录的操作。|
+|+registerWithDefaultView|调用这个方法，会打开一个用户名、密码注册的界面，可以进行用户名、密码注册的操作。|
+|+authenticateWithDefaultView|调用这个方法，会打开一个短信验证码、短信链接登录的界面，可以进行短信登录操作。|
+|+retrievePwdWithDefaultView|调用这个方法，会打开一个重置密码的界面，可以进行密码重置的操作。|
 
  
 
