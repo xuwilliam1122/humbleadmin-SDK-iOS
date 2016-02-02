@@ -91,10 +91,10 @@
 	这个类是 可信ID 的 UI 类，调用里面的方法，会自动绘制 UI 界面，来实现相对应的接口功能。
 |名称|使用方法|
 |---|---|
-|+loginWithDefaultView|调用这个方法，会打开一个用户名、密码登录的界面，可以进行用户名、密码登录的操作。|
-|+registerWithDefaultView|调用这个方法，会打开一个用户名、密码注册的界面，可以进行用户名、密码注册的操作。|
-|+authenticateWithDefaultView|调用这个方法，会打开一个短信验证码、短信链接登录的界面，可以进行短信登录操作。|
-|+retrievePwdWithDefaultView|调用这个方法，会打开一个重置密码的界面，可以进行密码重置的操作。|
+|+smsCodeLoginWithDeafultUI|调用这个方法，会打开一个请求短信验证码的界面，可以进行短信验证码登录的操作。|
+|+customLoginWithDefaultUI|调用这个方法，会打开一个用户名、密码登录的界面，可以进行用户名、密码登录的操作。|
+|+registerWithDefaultUI|调用这个方法，会打开一个用户名、密码注册的界面，可以进行用户名、密码注册的操作。|
+|+forgotPwdWithDefaultUI|调用这个方法，会打开一个重置密码的界面，可以进行密码重置的操作。|
 
  
 
