@@ -14,23 +14,23 @@
 @interface TrustyKit : NSObject
 
 /**
+ *  使用 SDK 封装的 UI 进行短信验证码登录
+ */
++ (void)smsLoginWithDeafultUI;
+
+/**
  *  使用 SDK 封装的 UI 进行用户名密码登录
  */
-+ (void)loginWithDefaultView;
++ (void)customLoginWithDefaultUI;
 
 /**
  *  使用 SDK 封装的 UI 进行用户名密码注册
  */
-+ (void)registerWithDefaultView;
-
-/**
- *  使用 SDK 封装的 UI 进行短信验证码登录
- */
-+ (void)authenticateWithDefaultView;
++ (void)registerWithDefaultUI;
 
 /**
  *  使用 SDK 封装的 UI 进行找回密码
  */
-+ (void)retrievePwdWithDefaultView;
++ (void)forgotPwdWithDefaultUI;
 
 @end
