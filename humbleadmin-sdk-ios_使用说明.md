@@ -1,5 +1,5 @@
 # humbleadmin-SDK-iOS 使用说明 #
-这里对使用本 `SDK` 进行详细说明，包括了如何在开发者社区进行项目创建，如何引用本 `SDK` 库，以及快速演示，使用本 `SDK` 库时发送请求如何获取到所需要的信息。下面我明就一步步的对项目申请到可以正常使用作出详细的说明。
+这里对使用本 `SDK` 进行详细说明，包括了如何在开发者社区进行项目创建，如何引用本 `SDK` 库，以及快速演示，使用本 `SDK` 库时发送请求如何获取到所需要的信息。下面我们就一步步的对项目申请到可以正常使用作出详细的说明。
 
 ## 开发者社区注册 ##
 </br>
@@ -43,11 +43,11 @@
 
 ## humbleadmin-SDK-iOS 库的使用##
 ### 创建项目 ###
-这一步对于各位开发者来说可以跳过，当然为了真个文档的清晰详细，我还是要在这里演示一下。很简单的项目创建，那么就跟随图片一步一步的进行创建
+这一步对于各位开发者来说可以跳过，当然为了整个文档的清晰详细，我还是要在这里演示一下。很简单的项目创建，那么就跟随图片一步一步的进行创建
 ![](http://7xnick.com1.z0.glb.clouddn.com/12.png)</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/13.png)</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/14.png)</br>
-前面分别是创建新项目，选择最简单的一个单页面项目，项目名我与在服务器上注册的产品命名为一样的。之后一部保存路经图片我就省略了。最后项目为
+前面分别是创建新项目，选择最简单的一个单页面项目，项目名我与在服务器上注册的产品命名为一样的。之后一步保存路径图片我就省略了。最后项目为
 ![](http://7xnick.com1.z0.glb.clouddn.com/15.png)</br>
 这样，咱们的项目就创建好了。</br>
 
@@ -81,7 +81,7 @@
 ![](http://7xnick.com1.z0.glb.clouddn.com/22.png)</br>
 而项目目录会变成这样</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/23.png)</br>
-不要慌张，这样是正确的，从此往后咱们在打开项目进行编辑，就要打开 `TestDemo.xcworkspace` 文件了进行编辑了。打开后的项目结构是这样的</br>
+不要慌张，这样是正确的，从此往后咱们在打开项目进行编辑，就要打开 `TestDemo.xcworkspace` 文件来进行编辑了。打开后的项目结构是这样的</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/24.png)</br>
 这样通过 `cocoapods` 获取 `SDK` 就完成了。
 
@@ -92,7 +92,7 @@
 ![](http://7xnick.com1.z0.glb.clouddn.com/25.png)</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/26.png)</br>
 这样咱们的`SDK`引入就完成了。</br>
-下面咱们来实现以下`humbleadmin-SDK-iOS`库中有短信获取验证么，及验证码验证的功能，这儿功能我就在 `ViewController` 中进行实现。</br>
+下面咱们来实现一下`humbleadmin-SDK-iOS`库中由短信获取验证码，以及验证码验证的功能，这儿功能我就在 `ViewController` 中进行实现。</br>
 在实现功能前，咱们先利用 `Main.storyboard` 简单绘制一个界面。</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/27.png)</br>
 个人习惯用 `iPhone6` 的模拟器进行测试，所以这里的尺寸选择的就是 `iPhone6` 的尺寸。</br>
@@ -100,7 +100,7 @@
 当屏幕的大小变成这样之后，我们需要两个 `TextField` 控件和两个 `Button` 控件，直接拖拽上来就好。</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/29.png)</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/30.png)</br>
-调整一下位置，为了方便我在分别给它们进行了命名和 `placeholder` 的设置。</br>
+调整一下位置，为了方便我再分别给它们进行了命名和 `placeholder` 的设置。</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/31.png)</br>
 下面要把这些控件和代码相关联，用快捷键
 
