@@ -71,6 +71,10 @@
 	
 这里最好直接复制，手动输入的时候`'`引号很容易出问题哦~
 ![](http://7xnick.com1.z0.glb.clouddn.com/20.png)</br>
+在这里也可以进行指定版本号的 `SDK` 获取
+
+	pod 'humbleadmin-SDK-iOS',:git=>'https://github.com/RNTD/humbleadmin-SDK-iOS.git', :tag => '0.5.1'
+这样所获取到的就是 `SDK` 所指定的 `0.5.1` 版本的 `SDK`。
 输入完成之后就是这个样子的，然后保存并退出回到终端处输入
 
 	pod install
