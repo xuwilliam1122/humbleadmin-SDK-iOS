@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">Humble Admin </a>
+				<a href="../index.html">HumbleAdmin </a>
 			</h1>
 
 			<p id="developer-home">
@@ -54,15 +54,31 @@
 
 	
 	
-
-	
-	<optgroup label="Class Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/sessionWithUserName:password:completion:">+ sessionWithUserName:password:completion:</option>
+		<option value="//api/name/authConfig">authConfig</option>
+		
+		<option value="//api/name/authToken">authToken</option>
+		
+		<option value="//api/name/trustyUser">trustyUser</option>
 		
 	</optgroup>
 	
 
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/authenticate:trustyUser:block:">- authenticate:trustyUser:block:</option>
+		
+		<option value="//api/name/authenticateVerify:block:">- authenticateVerify:block:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/logout">- logout</option>
+		
+	</optgroup>
 	
 	
 </select>
@@ -83,7 +99,7 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td><a href="../Classes/Trusty.html">Trusty</a> : NSObject</td>
+	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
 	<td>TrustySession.h</td>
@@ -96,7 +112,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>用户使用用户、密码登录类偶</p>
+						<p>会话信息类</p>
 					</div>
 					
 					
@@ -112,8 +128,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/sessionWithUserName:password:completion:" title="sessionWithUserName:password:completion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sessionWithUserName:password:completion:">+&nbsp;sessionWithUserName:password:completion:</a></code>
+	<a name="//api/name/authToken" title="authToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authToken">&nbsp;&nbsp;authToken</a></code>
 </h3>
 
 	<div class="method-info">
@@ -123,12 +139,207 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>由用户名密码登录</p>
+				<p>SDK 的 AuthToken 信息</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)sessionWithUserName:(NSString *)<em>userName</em> password:(NSString *)<em>password</em> completion:(void ( ^ ) ( NSString *status ))<em>status</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) NSString *authToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SDK 的 AuthToken 信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustySession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authConfig" title="authConfig"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authConfig">&nbsp;&nbsp;authConfig</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AuthConfig 对象的变量</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) TrustyAuthConfig *authConfig</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AuthConfig 对象的变量</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustySession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trustyUser" title="trustyUser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trustyUser">&nbsp;&nbsp;trustyUser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li><a href="../Classes/TrustyUser.html">TrustyUser</a> 对象变量、</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) TrustyUser *trustyUser</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li><a href="../Classes/TrustyUser.html">TrustyUser</a> 对象变量、</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustySession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>对象实例化</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回实例化对象</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>对象实例化</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustySession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authenticate:trustyUser:block:" title="authenticate:trustyUser:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticate:trustyUser:block:">&ndash;&nbsp;authenticate:trustyUser:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用户登录接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)authenticate:(TrustyAuthConfig *)<em>authConfig</em> trustyUser:(TrustyUser *)<em>trustyUser</em> block:(TrustyBooleanResultBlock)<em>block</em></code></div>
 
 		    
 			
@@ -137,18 +348,18 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>userName</code></th>
-						<td><p>用户名</p></td>
+						<th scope="row" class="argument-name"><code>authConfig</code></th>
+						<td><p>传入的用户信息，即登录方式及终端用户手机号</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>密码</p></td>
+						<th scope="row" class="argument-name"><code>trustyUser</code></th>
+						<td><p>传入 <a href="../Classes/TrustyUser.html">TrustyUser</a> 对象，请求成功时会对该对象属性进行赋值</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>status</code></th>
-						<td><p>返回登录状态</p></td>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block 返回的模块信息，包括 (BOOL succeeded, NSError *error)</p></td>
 					</tr>
 				
 				</table>
@@ -162,7 +373,116 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>由用户名密码登录</p>
+				<p>用户登录接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustySession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authenticateVerify:block:" title="authenticateVerify:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticateVerify:block:">&ndash;&nbsp;authenticateVerify:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>短信验证码方式登录的验证码验证的请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)authenticateVerify:(NSString *)<em>code</em> block:(TrustyBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>code</code></th>
+						<td><p>验证码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block 返回的模块信息，包括 (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>短信验证码方式登录的验证码验证的请求</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustySession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logout" title="logout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logout">&ndash;&nbsp;logout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>当前用户的登出</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>当前用户的登出</p>
 			</div>
 			
 
@@ -194,7 +514,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-02-29</p>
+						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-03-09</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">Humble Admin </a>
+				<a href="../index.html">HumbleAdmin </a>
 			</h1>
 
 			<p id="developer-home">
@@ -58,11 +58,7 @@
 	
 	<optgroup label="Class Methods">
 		
-		<option value="//api/name/customLoginWithDefaultUI">+ customLoginWithDefaultUI</option>
-		
-		<option value="//api/name/forgotPwdWithDefaultUI">+ forgotPwdWithDefaultUI</option>
-		
-		<option value="//api/name/registerWithDefaultUI">+ registerWithDefaultUI</option>
+		<option value="//api/name/smsLoginButton">+ smsLoginButton</option>
 		
 		<option value="//api/name/smsLoginWithDeafultUI">+ smsLoginWithDeafultUI</option>
 		
@@ -102,7 +98,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>可信 ID UI 接口</p>
+						<p>SDK UI 接口类</p>
 					</div>
 					
 					
@@ -129,7 +125,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>使用 SDK 封装的 UI 进行短信验证码登录</p>
+				<p>使用 SDK 封装的界面进行短信验证码登录</p>
 			</div>
 			
 		    
@@ -146,7 +142,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>使用 SDK 封装的 UI 进行短信验证码登录</p>
+				<p>使用 SDK 封装的界面进行短信验证码登录</p>
 			</div>
 			
 
@@ -164,8 +160,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/customLoginWithDefaultUI" title="customLoginWithDefaultUI"></a>
-	<h3 class="method-title"><code><a href="#//api/name/customLoginWithDefaultUI">+&nbsp;customLoginWithDefaultUI</a></code>
+	<a name="//api/name/smsLoginButton" title="smsLoginButton"></a>
+	<h3 class="method-title"><code><a href="#//api/name/smsLoginButton">+&nbsp;smsLoginButton</a></code>
 </h3>
 
 	<div class="method-info">
@@ -175,16 +171,22 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>使用 SDK 封装的 UI 进行用户名密码登录</p>
+				<p>DUL 短信验证码登录的默认按钮
+按钮样式为系统默认样式，开发者可以自定义按钮位置</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)customLoginWithDefaultUI</code></div>
+			<div class="method-subsection method-declaration"><code>+ (UIButton *)smsLoginButton</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>短信验证码登录默认按钮</p>
+			</div>
 			
 
 			
@@ -192,99 +194,8 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>使用 SDK 封装的 UI 进行用户名密码登录</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TrustyKit.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/registerWithDefaultUI" title="registerWithDefaultUI"></a>
-	<h3 class="method-title"><code><a href="#//api/name/registerWithDefaultUI">+&nbsp;registerWithDefaultUI</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>使用 SDK 封装的 UI 进行用户名密码注册</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (void)registerWithDefaultUI</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>使用 SDK 封装的 UI 进行用户名密码注册</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TrustyKit.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/forgotPwdWithDefaultUI" title="forgotPwdWithDefaultUI"></a>
-	<h3 class="method-title"><code><a href="#//api/name/forgotPwdWithDefaultUI">+&nbsp;forgotPwdWithDefaultUI</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>使用 SDK 封装的 UI 进行找回密码</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (void)forgotPwdWithDefaultUI</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>使用 SDK 封装的 UI 进行找回密码</p>
+				<p>DUL 短信验证码登录的默认按钮
+按钮样式为系统默认样式，开发者可以自定义按钮位置</p>
 			</div>
 			
 
@@ -316,7 +227,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-02-29</p>
+						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-03-09</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

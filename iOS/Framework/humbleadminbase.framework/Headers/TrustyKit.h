@@ -9,28 +9,21 @@
 #import <Foundation/Foundation.h>
 
 /**
- *  可信 ID UI 接口
+ *  SDK UI 接口类
  */
 @interface TrustyKit : NSObject
 
 /**
- *  使用 SDK 封装的 UI 进行短信验证码登录
+ *  使用 SDK 封装的界面进行短信验证码登录
  */
 + (void)smsLoginWithDeafultUI;
 
 /**
- *  使用 SDK 封装的 UI 进行用户名密码登录
+ *  DUL 短信验证码登录的默认按钮
+ *  按钮样式为系统默认样式，开发者可以自定义按钮位置
+ *
+ *  @return 短信验证码登录默认按钮
  */
-+ (void)customLoginWithDefaultUI;
-
-/**
- *  使用 SDK 封装的 UI 进行用户名密码注册
- */
-+ (void)registerWithDefaultUI;
-
-/**
- *  使用 SDK 封装的 UI 进行找回密码
- */
-+ (void)forgotPwdWithDefaultUI;
++ (UIButton *)smsLoginButton;
 
 @end

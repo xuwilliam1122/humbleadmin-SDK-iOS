@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">Humble Admin </a>
+				<a href="../index.html">HumbleAdmin </a>
 			</h1>
 
 			<p id="developer-home">
@@ -58,17 +58,31 @@
 	
 	<optgroup label="Class Methods">
 		
-		<option value="//api/name/getAuthToken">+ getAuthToken</option>
+		<option value="//api/name/getAppID">+ getAppID</option>
 		
-		<option value="//api/name/getPhoneNumber">+ getPhoneNumber</option>
+		<option value="//api/name/getAppSchema">+ getAppSchema</option>
 		
-		<option value="//api/name/getUserID">+ getUserID</option>
+		<option value="//api/name/getAppSecret">+ getAppSecret</option>
 		
-		<option value="//api/name/logout">+ logout</option>
+		<option value="//api/name/getUSCOpenIDPort">+ getUSCOpenIDPort</option>
+		
+		<option value="//api/name/setAppID:appSecret:">+ setAppID:appSecret:</option>
+		
+		<option value="//api/name/setAppSchema:">+ setAppSchema:</option>
+		
+		<option value="//api/name/setUSCOpenIDPort:">+ setUSCOpenIDPort:</option>
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
 		
 	</optgroup>
 	
 
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/session">- session</option>
+		
+	</optgroup>
 	
 	
 </select>
@@ -102,7 +116,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Trusty 可信ID 登出以及持有的 手机号码 和 AuthToken</p>
+						<p>可信 ID 接口类</p>
 					</div>
 					
 					
@@ -118,8 +132,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/getPhoneNumber" title="getPhoneNumber"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getPhoneNumber">+&nbsp;getPhoneNumber</a></code>
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
 </h3>
 
 	<div class="method-info">
@@ -129,12 +143,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取当前持有的手机号码</p>
+				<p>单例方法实例化对象</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (NSString *)getPhoneNumber</code></div>
+			<div class="method-subsection method-declaration"><code>+ (Trusty *)sharedInstance</code></div>
 
 		    
 			
@@ -142,7 +156,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>返回手机号码字符串</p>
+				<p>返回实例化对象</p>
 			</div>
 			
 
@@ -151,7 +165,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取当前持有的手机号码</p>
+				<p>单例方法实例化对象</p>
 			</div>
 			
 
@@ -169,8 +183,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getAuthToken" title="getAuthToken"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getAuthToken">+&nbsp;getAuthToken</a></code>
+	<a name="//api/name/session" title="session"></a>
+	<h3 class="method-title"><code><a href="#//api/name/session">&ndash;&nbsp;session</a></code>
 </h3>
 
 	<div class="method-info">
@@ -180,12 +194,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取当前的 AuthToken 信息</p>
+				<p>获取 Session 信息</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (NSString *)getAuthToken</code></div>
+			<div class="method-subsection method-declaration"><code>- (TrustySession *)session</code></div>
 
 		    
 			
@@ -193,7 +207,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>返回当前的 AuthToken 字符串</p>
+				<p>返回 session 信息</p>
 			</div>
 			
 
@@ -202,7 +216,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取当前的 AuthToken 信息</p>
+				<p>获取 Session 信息</p>
 			</div>
 			
 
@@ -220,8 +234,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getUserID" title="getUserID"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getUserID">+&nbsp;getUserID</a></code>
+	<a name="//api/name/setAppID:appSecret:" title="setAppID:appSecret:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAppID:appSecret:">+&nbsp;setAppID:appSecret:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -231,21 +245,33 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取当前的 UserID 信息</p>
+				<p>启动项目第一时间初始化这里，在此处传入由服务器获取到的信息</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (NSString *)getUserID</code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)setAppID:(NSString *)<em>appID</em> appSecret:(NSString *)<em>appSecret</em></code></div>
 
 		    
 			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>返回当前的 UserID 字符串</p>
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appID</code></th>
+						<td><p>appID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appSecret</code></th>
+						<td><p>appSecret</p></td>
+					</tr>
+				
+				</table>
 			</div>
+			
+
 			
 
 			
@@ -253,7 +279,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取当前的 UserID 信息</p>
+				<p>启动项目第一时间初始化这里，在此处传入由服务器获取到的信息</p>
 			</div>
 			
 
@@ -271,8 +297,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/logout" title="logout"></a>
-	<h3 class="method-title"><code><a href="#//api/name/logout">+&nbsp;logout</a></code>
+	<a name="//api/name/getAppID" title="getAppID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAppID">+&nbsp;getAppID</a></code>
 </h3>
 
 	<div class="method-info">
@@ -282,14 +308,128 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>登出，并清除获取到的 AuthToken</p>
+				<p>获取 AppID 值</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)logout</code></div>
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getAppID</code></div>
 
 		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AppID 值</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取 AppID 值</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Trusty.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAppSecret" title="getAppSecret"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAppSecret">+&nbsp;getAppSecret</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取 App Secret 值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getAppSecret</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回 App 的算子值</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取 App Secret 值</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Trusty.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAppSchema:" title="setAppSchema:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAppSchema:">+&nbsp;setAppSchema:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置 App 自身的 URL Schema</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setAppSchema:(NSString *)<em>appSchema</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appSchema</code></th>
+						<td><p>传入获取到的 URL Schema 信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -299,7 +439,167 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>登出，并清除获取到的 AuthToken</p>
+				<p>设置 App 自身的 URL Schema</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Trusty.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAppSchema" title="getAppSchema"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAppSchema">+&nbsp;getAppSchema</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取 App Schema 值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getAppSchema</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>App Schema 值</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取 App Schema 值</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Trusty.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUSCOpenIDPort:" title="setUSCOpenIDPort:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUSCOpenIDPort:">+&nbsp;setUSCOpenIDPort:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置 App 自身的 USCOpenIDPort</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setUSCOpenIDPort:(NSString *)<em>USCOpenIDPort</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>USCOpenIDPort</code></th>
+						<td><p>由网站获取的 USC OpenID Port 值传入到 SDK</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置 App 自身的 USCOpenIDPort</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Trusty.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUSCOpenIDPort" title="getUSCOpenIDPort"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUSCOpenIDPort">+&nbsp;getUSCOpenIDPort</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取 USC OpenID Port 值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getUSCOpenIDPort</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>USC OpenID Port 值</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取 USC OpenID Port 值</p>
 			</div>
 			
 
@@ -331,7 +631,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-02-29</p>
+						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-03-09</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
