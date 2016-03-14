@@ -3,7 +3,7 @@
 
 ## 开发者社区注册 ##
 </br>
-首先我们要来到`拙政云`的开发者社区界面<http://open.humbleadmin.io/>。点击进入后我们会看到这样的界面。</br>
+首先我们要来到`拙政云`的[开发者社区界面](http://open.humbleadmin.io/)。点击进入后我们会看到这样的界面。</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/1.png)</br>
 </br>
 对于第一次进入该网页的朋友你就需要进行用户的注册，如果是咱们`拙政云`的老朋友，你就可以跳过这一步了。</br>
@@ -91,10 +91,10 @@
 
 ### SDK 的使用 ###
 #### SDK 自身的使用 ####
-`humbleadmin-SDK-iOS` 一共有九个头文件，他们分别承担了不同的功能，但是，无论使用什么功能，都必须先对 `AuthConfig.h` 中的属性进行设置，也就是将咱们从开发者社区中获取到的安全信息分别填写进去。</br>
+`humbleadmin-SDK-iOS` 一共有九个头文件，他们分别承担了不同的功能，但是，无论使用什么功能，都必须先对 `Trusty.h` 中的属性进行设置，也就是将咱们从开发者社区中获取到的安全信息分别填写进去。</br>
 在这个 Demo 中我就将这些信息写在了 `AppDelegate` </br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/25.png)</br>
-![](http://7xnick.com1.z0.glb.clouddn.com/26.png)</br>
+![](http://7xnick.com1.z0.glb.clouddn.com/26-1.png)</br>
 这样咱们的`SDK`引入就完成了。</br>
 下面咱们来实现一下`humbleadmin-SDK-iOS`库中由短信获取验证码，以及验证码验证的功能，这儿功能我就在 `ViewController` 中进行实现。</br>
 在实现功能前，咱们先利用 `Main.storyboard` 简单绘制一个界面。</br>
@@ -114,10 +114,16 @@
 拖拽过去之后放手，进行命名即可。</br>
 这里要特别说明一下，因为我们没有对按钮自定制的需求，所以在拖拽 `Button` 控件时我选择的是 `Action` 状态而不是 `Button`</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/33.png)</br>
-之后在 `.h` 文件中加上我们需要引用的短信方法类 `#import <humbleadmin-SDK-iOS/TrustySMS.h>`
-![](http://7xnick.com1.z0.glb.clouddn.com/34.png)</br>
+之后在 `.h` 文件中加上我们需要引用的短信方法类 `#import <humbleadmin-SDK-iOS/TrustySession.h>`
+![](http://7xnick.com1.z0.glb.clouddn.com/34-1.png)</br>
 这样 `.h` 文件部分就设置完成了。在 `.m` 文件中写下咱们需要的方法</br>
-![](http://7xnick.com1.z0.glb.clouddn.com/36.png)</br>
+![](http://7xnick.com1.z0.glb.clouddn.com/35-2.png)</br>
+首先，咱们要先实例化出 `TrustyAuthConfig` 、 `TrustyUser` 和 `TrustySession` 对象，</br>
+`TrustyAuthConfig` 它里面所涵盖的是用户名以及登录方式的信息。</br>
+`TrustyUser` 则是传入一个空的对象即可，在请求成功之后，会对 `TrustyUser` 对象中的属性进行赋值，从而方便各位开发者使用。</br>
+`TrustySession` 是管理整个 SDK 的接口类，只有实例化了 `TrustySession` 对象，才可以进行数据通讯。</br>
+使用方法如下:</br>
+![](http://7xnick.com1.z0.glb.clouddn.com/36-2.png)</br>
 这样，`SDK` 的使用就完成了。
 
 #### SDK 环境的要求 ####
@@ -136,9 +142,10 @@
 并设置成 `YES`。</br>
 ![](http://7xnick.com1.z0.glb.clouddn.com/41.png)</br>
 这样，`plist` 文件设置就完成了，下面让我们在运行一次试试！！</br>
-![](http://7xnick.com1.z0.glb.clouddn.com/42.png)</br>
-我们发送的短信验证码申请返回值是 `200` ，并且所填写的手机号码对应手机会收到一条验证码短信，填写验证码后，进行验证码认证。</br>
-![](http://7xnick.com1.z0.glb.clouddn.com/43.png)</br>
-返回值是 `200` 时就可以获取到 `AuthToken`。方法如下</br>
-![](http://7xnick.com1.z0.glb.clouddn.com/44.png)</br>
+![](http://7xnick.com1.z0.glb.clouddn.com/42-2.png)</br>
+我们发送的短信验证码申请返回值是请求成功 ，这是咱们的 `TrustyUser` 对象的属性也已经进行了赋值，并且所填写的手机号码对应手机会收到一条验证码短信，填写验证码后，进行验证码认证。</br>
+![](http://7xnick.com1.z0.glb.clouddn.com/43-2.png)</br>
+验证成功之后会在请求中返回验证成功的信息，并且为 `TrustySession` 对象的 `authToken` 属性进行赋值以便开发者使用</br>
+<!--返回值是 `200` 时就可以获取到 `AuthToken`。方法如下</br>
+![](http://7xnick.com1.z0.glb.clouddn.com/44.png)</br>-->
 这样，`humbleadmin-SDK-iOS` 的最基本演示就到这了，如果还有其他问题可以与我们[联系](http://www.humbleadmin.io)。
