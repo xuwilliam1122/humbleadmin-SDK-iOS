@@ -60,15 +60,11 @@
 		
 		<option value="//api/name/getAppID">+ getAppID</option>
 		
-		<option value="//api/name/getAppSchema">+ getAppSchema</option>
-		
 		<option value="//api/name/getAppSecret">+ getAppSecret</option>
 		
 		<option value="//api/name/getUSCOpenIDPort">+ getUSCOpenIDPort</option>
 		
 		<option value="//api/name/setAppID:appSecret:">+ setAppID:appSecret:</option>
-		
-		<option value="//api/name/setAppSchema:">+ setAppSchema:</option>
 		
 		<option value="//api/name/setUSCOpenIDPort:">+ setUSCOpenIDPort:</option>
 		
@@ -116,7 +112,9 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>可信 ID 接口类</p>
+						<p>Trusty 是「拙政云 &ndash; 可信用户系统」的主类，提供全局安全设置的静态方法。</p>
+
+<p>在使用「拙政云」前，需要在 <code>application:didFinishLaunchingWithOptions:</code> 中调用 <a href="#//api/name/setAppID:appSecret:">setAppID:appSecret:</a> 进行全局安全设置。</p>
 					</div>
 					
 					
@@ -127,8 +125,8 @@
 						<a title="Tasks" name="tasks"></a>
 						
 
-						
-						
+						<a title="单例" name="task_单例"></a>
+						<h2 class="task-title">单例</h2>
 
 						<div class="task-list">
 							<div class="section-method">
@@ -143,7 +141,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>单例方法实例化对象</p>
+				<p>获取 Trusty 单例对象。在正确设置 AppID 和 AppSecret 后，通过 Trusty 单例对象的 <a href="#//api/name/session">session</a> 进行注册、登录、鉴权操作。</p>
 			</div>
 			
 		    
@@ -156,7 +154,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>返回实例化对象</p>
+				<p><code>Trusty</code> 的单例对象。</p>
 			</div>
 			
 
@@ -165,7 +163,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>单例方法实例化对象</p>
+				<p>获取 Trusty 单例对象。在正确设置 AppID 和 AppSecret 后，通过 Trusty 单例对象的 <a href="#//api/name/session">session</a> 进行注册、登录、鉴权操作。</p>
 			</div>
 			
 
@@ -182,7 +180,15 @@
 			
 		</div>
 	</div>
-</div><div class="section-method">
+</div>
+						</div>
+						
+
+						<a title="属性" name="task_属性"></a>
+						<h2 class="task-title">属性</h2>
+
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/session" title="session"></a>
 	<h3 class="method-title"><code><a href="#//api/name/session">&ndash;&nbsp;session</a></code>
 </h3>
@@ -194,7 +200,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取 Session 信息</p>
+				<p>用来存储对话状态，进行用户系统操作。</p>
 			</div>
 			
 		    
@@ -207,7 +213,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>返回 session 信息</p>
+				<p>返回 <a href="../Classes/TrustySession.html"><code>TrustySession</code></a> 对象。</p>
 			</div>
 			
 
@@ -216,7 +222,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取 Session 信息</p>
+				<p>用来存储对话状态，进行用户系统操作。</p>
 			</div>
 			
 
@@ -233,7 +239,15 @@
 			
 		</div>
 	</div>
-</div><div class="section-method">
+</div>
+						</div>
+						
+
+						<a title="全局安全设置" name="task_全局安全设置"></a>
+						<h2 class="task-title">全局安全设置</h2>
+
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/setAppID:appSecret:" title="setAppID:appSecret:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/setAppID:appSecret:">+&nbsp;setAppID:appSecret:</a></code>
 </h3>
@@ -245,7 +259,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>启动项目第一时间初始化这里，在此处传入由服务器获取到的信息</p>
+				<p>对「可信用户系统」进行全局安全信息设置。</p>
 			</div>
 			
 		    
@@ -260,12 +274,12 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>appID</code></th>
-						<td><p>appID</p></td>
+						<td><p>应用的「APP ID」，在你<a href="http://open.humbleadmin.io">创建应用</a>后，可以在 控制台 -› 设置 -› 安全设置 里找到应用对应的「APP ID」。</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>appSecret</code></th>
-						<td><p>appSecret</p></td>
+						<td><p>应用的「APP SECRET」，在你<a href="http://open.humbleadmin.io">创建应用</a>后，可以在 控制台 -› 设置 -› 查看Secret 里找到应用对应的「APP SECRET」。</p></td>
 					</tr>
 				
 				</table>
@@ -276,11 +290,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>启动项目第一时间初始化这里，在此处传入由服务器获取到的信息</p>
-			</div>
 			
 
 			
@@ -308,7 +317,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取 AppID 值</p>
+				<p>获取「APP ID」信息。</p>
 			</div>
 			
 		    
@@ -321,17 +330,12 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>AppID 值</p>
+				<p>存储的「APP ID」字符串，如果没有设置则返回空字符串。</p>
 			</div>
 			
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取 AppID 值</p>
-			</div>
 			
 
 			
@@ -359,7 +363,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取 App Secret 值</p>
+				<p>获取「APP SECRET」信息。</p>
 			</div>
 			
 		    
@@ -372,17 +376,12 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>返回 App 的算子值</p>
+				<p>存储的「APP SECRET」字符串，如果没有设置则返回空字符串。</p>
 			</div>
 			
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取 App Secret 值</p>
-			</div>
 			
 
 			
@@ -398,116 +397,15 @@
 			
 		</div>
 	</div>
-</div><div class="section-method">
-	<a name="//api/name/setAppSchema:" title="setAppSchema:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setAppSchema:">+&nbsp;setAppSchema:</a></code>
-</h3>
+</div>
+						</div>
+						
 
-	<div class="method-info">
-		<div class="pointy-thing"></div>
+						<a title="已作废" name="task_已作废"></a>
+						<h2 class="task-title">已作废</h2>
 
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置 App 自身的 URL Schema</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (void)setAppSchema:(NSString *)<em>appSchema</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>appSchema</code></th>
-						<td><p>传入获取到的 URL Schema 信息</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>设置 App 自身的 URL Schema</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Trusty.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getAppSchema" title="getAppSchema"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getAppSchema">+&nbsp;getAppSchema</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取 App Schema 值</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (NSString *)getAppSchema</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>App Schema 值</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取 App Schema 值</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">Trusty.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/setUSCOpenIDPort:" title="setUSCOpenIDPort:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/setUSCOpenIDPort:">+&nbsp;setUSCOpenIDPort:</a></code>
 </h3>
@@ -519,7 +417,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>设置 App 自身的 USCOpenIDPort</p>
+				<p>对「可信用户系统」进行安全信息设置，此处设置的是「USC OpenID 端口」。 (<b class="deprecated">Deprecated:</b><span class="deprecated"> in version 0.6.2</span>)</p>
 			</div>
 			
 		    
@@ -534,7 +432,7 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>USCOpenIDPort</code></th>
-						<td><p>由网站获取的 USC OpenID Port 值传入到 SDK</p></td>
+						<td><p>应用的「USC OpenID 端口」，在你<a href="http://open.humbleadmin.io">创建应用</a>后，可以在 控制台 -› 设置 -› USC 信息 里找到应用对应的「OpenID 端口」。</p></td>
 					</tr>
 				
 				</table>
@@ -545,11 +443,6 @@
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>设置 App 自身的 USCOpenIDPort</p>
-			</div>
 			
 
 			
@@ -577,7 +470,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取 USC OpenID Port 值</p>
+				<p>获取「USC OpenID 端口」信息。 (<b class="deprecated">Deprecated:</b><span class="deprecated"> in version 0.6.2</span>)</p>
 			</div>
 			
 		    
@@ -590,17 +483,12 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>USC OpenID Port 值</p>
+				<p>通过 <code>+ </code>setUSCOpenIDPort:<code></code> 设置的「USC OpenID 端口」信息，如果没有设置则返回空白字符串："&ldquo; 。</p>
 			</div>
 			
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取 USC OpenID Port 值</p>
-			</div>
 			
 
 			
@@ -631,7 +519,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-03-09</p>
+						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-03-23</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -11,57 +11,69 @@
 #import "TrustyUser.h"
 
 /**
- *  会话信息类
+ *  通过 `TrustySession`，你的 App 同服务器进行通信，并完成绝大多数的用户操作，如：注册、登录、鉴权。
+ *
+ *  `TrustySession` 不仅保存了用户系统功能的配置信息， 还保存了注册、登录、鉴权成功后的安全令牌、存储终端用户信息的对象。
  */
 @interface TrustySession : NSObject
 
 /**
- *  SDK 的 AuthToken 信息
+ *  @name 初始化
  */
-@property (nonatomic, retain, readonly) NSString *authToken;
-
 /**
- *  AuthConfig 对象的变量
- */
-@property (nonatomic, retain, readonly) TrustyAuthConfig *authConfig;
-
-/**
- *  TrustyUser 对象变量、
- 
- */
-@property (nonatomic, retain, readonly) TrustyUser *trustyUser;
-
-/**
- *  对象实例化
+ *  使用 TrustyAuthConfig 初始化一个 `TrustySession` 的对象。
  *
- *  @return 返回实例化对象
+ *  @return `TrustySession` 的对象。
  */
 - (instancetype)init;
 
 /**
- *  用户登录接口
+ *  @name 登录、鉴权
+ */
+/**
+ *  向服务器发起登录请求，根据 authConfig 属性的不同，请求的行为也将有所不同。
  *
- *  @param authConfig 传入的用户信息，即登录方式及终端用户手机号
- *  @param trustyUser 传入 TrustyUser 对象，请求成功时会对该对象属性进行赋值
- *  @param block      Block 返回的模块信息，包括 (BOOL succeeded, NSError *error)
+ *  @param authConfig 登录设置。 （去掉这个参数）
+ *  @param trustyUser 登录成功后，回调写入的 TrustyUser 对象。
+ *  @param block      回调结果。
  */
 - (void)authenticate:(TrustyAuthConfig *)authConfig
           trustyUser:(TrustyUser *)trustyUser
                block:(TrustyBooleanResultBlock)block;
 
 /**
- *  短信验证码方式登录的验证码验证的请求
+ *  验证短信验证码。
  *
- *  @param code       验证码
- *  @param block      Block 返回的模块信息，包括 (BOOL succeeded, NSError *error)
+ *  验证成功后，authToken 将存储从服务器获取的安全令牌。
+ *
+ *  @param code       短信验证码。
+ *  @param block      回调结果。
  */
 - (void)authenticateVerify:(NSString *)code
                      block:(TrustyBooleanResultBlock)block;
 
 /**
- *  当前用户的登出
+ *  登出当前终端用户。
  */
 - (void)logout;
+
+/**
+ *  @name 属性
+ */
+/**
+ *  终端用户鉴权成功后，「可信用户系统」服务器分配的安全令牌。
+ */
+@property (nonatomic, retain, readonly) NSString *authToken;
+
+/**
+ *  存储「可信用户系统」设置的 [TrustyAuthconfig](../Classes/TrustyAuthConfig.html) 属性。
+ */
+@property (nonatomic, retain, readonly) TrustyAuthConfig *authConfig;
+
+/**
+ *  存储登录成功的终端用户信息的对象。
+ */
+@property (nonatomic, retain, readonly) TrustyUser *trustyUser;
 
 
 @end

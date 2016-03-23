@@ -104,7 +104,11 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>固定属性类，所有值由服务器抄录过来，第一时间传入即可。</p>
+						<p><code>TrustyAuthConfig</code> 用来对「可信用户系统」进行配置。</p>
+
+<p>根据 <code>TrustyAuthConfig</code> 的配置，「可信用户系统」在客户端呈现不同的业务逻辑或 UI 界面、操作。</p>
+
+<p>你应该在开始同服务器进行通信、建立会话前，先配置好你的 <code>TrustyAuthConfig</code> 对象。</p>
 					</div>
 					
 					
@@ -115,11 +119,129 @@
 						<a title="Tasks" name="tasks"></a>
 						
 
-						
-						
+						<a title="初始化" name="task_初始化"></a>
+						<h2 class="task-title">初始化</h2>
 
 						<div class="task-list">
 							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过登录方式、用户名，初始化一个 <code>TrustyAuthConfig</code> 对象。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>一个新的 <code>TrustyAuthConfig</code> 对象。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过登录方式、用户名，初始化一个 <code>TrustyAuthConfig</code> 对象。</p>
+
+<p>你可以在以后更改 <code>TrustyAuthConfig</code> 对象的登录方式和用户名属性。</p>
+
+<p><code>TrustyAuthConfig</code> 对象将被传递给 <a href="../Classes/TrustySession.html"><code>TrustySession</code></a> 对象，以决定  <a href="../Classes/TrustySession.html"><code>TrustySession</code></a> 的行为。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustyAuthConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="配置属性" name="task_配置属性"></a>
+						<h2 class="task-title">配置属性</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/authenticateType" title="authenticateType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticateType">&nbsp;&nbsp;authenticateType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>注册、登录、鉴权方式。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) TrustyAuthenticateType authenticateType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>注册、登录、鉴权方式。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/TrustyAuthenticateType.html">TrustyAuthenticateType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustyAuthConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/userName" title="userName"></a>
 	<h3 class="method-title"><code><a href="#//api/name/userName">&nbsp;&nbsp;userName</a></code>
 </h3>
@@ -131,7 +253,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>终端用户的用户名，即手机号码</p>
+				<p>终端用户的用户名。</p>
 			</div>
 			
 		    
@@ -148,104 +270,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>终端用户的用户名，即手机号码</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TrustyAuthConfig.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/authenticateType" title="authenticateType"></a>
-	<h3 class="method-title"><code><a href="#//api/name/authenticateType">&nbsp;&nbsp;authenticateType</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置登录的方式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) int authenticateType</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>设置登录的方式</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TrustyAuthConfig.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/init" title="init"></a>
-	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>实例化对象</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>返回实例化对象</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>实例化对象</p>
+				<p>终端用户的用户名。</p>
 			</div>
 			
 
@@ -277,7 +302,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-03-09</p>
+						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-03-23</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

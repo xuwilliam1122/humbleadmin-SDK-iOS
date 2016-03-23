@@ -1,11 +1,11 @@
 #humbleadmin-SDK-iOS#
 ##简介##
-	humbleadmin-SDK-iOS 是华瑞网研所开发的 可信ID SDK
-	可提供 短信链接登录 和 验证码登录 以及 相关联的 APP 间 SSO 登录的功能
+	「humbleadmin-SDK-iOS」是华瑞网研所开发的 「可信 ID」SDK
+	可提供 短信验证码登录 、 用户名和密码的注册和登录方法。
 	
 ##配置##
-使用本 SDK 时，项目需要满足以下要求。</br>
-* 项目设置 要求 项目的 Deployment Target 在 7.0 以上 。</br>
+使用本 `SDK` 时，项目需要满足以下要求。</br>
+* 项目设置 要求 项目的 `Deployment Target` 在 `7.0` 以上 。</br>
 * 项目设置 需要 项目在自身的 `.plist` 文件中添加 `App Transport Security Settings` 并在该项中加入 `Allow Arbitrary Loads` 将其值设置为 `YES` 。
 * 项目设置 需要 项目在自身的 `.plist` 文件中 `URL types` 项内添加由 `humbleadmin.io` 中获取到的 `App Schema`。
 	
@@ -44,13 +44,13 @@
 |-init|	`TrustyAuthConfig` 对象的实例化方法，对象实例化之后，可以对立面的 `userName` 和 `authenticateType` 属性进行设置，</br>从而确立用户的登录名以及登录方式。|
 
 ###TrustyUser.h###
-	这个类是 可信 ID 的终端用户信返回类，开发者在调用用户登录方法时，传入初始化的该对象，请求成功后该对象就会附带有用户对应的信息包括 userID 、phoneNumber 和 email 三个属性。
+	这个类是「可信 ID」的终端用户信返回类，开发者在调用用户登录方法时，传入初始化的该对象，请求成功后该对象就会附带有用户对应的信息包括 userID 、phoneNumber 和 email 三个属性。
 |名称|使用方法|
 |---|---|
 |-init|`TrustyUser` 对象的实例化方法，对象实例化之后，可以对里面的 `userID` 、`phoneNumber` 和 `email` 的属性进行读取。|
 
 ###TrustySession.h###
-	这个类是 可信 ID 的请求方法接口类，该类中包含 authToken 、 authConfig 和 trustyUser 三个属性，在请求结束后，该类的属性中都会获取到相应的值。
+	这个类是「可信 ID」的请求方法接口类，该类中包含 authToken 、 authConfig 和 trustyUser 三个属性，在请求结束后，该类的属性中都会获取到相应的值。
 |名称|使用方法|
 |---|---|
 |-init|`TrustySession` 对象实例化方法，调用该类方法时需要先进行实例化。|
@@ -59,7 +59,7 @@
 |-logout |登出`可信ID`。|
 
 ###TrustyKit.h###
-	这个类是 可信ID 的 UI 类，调用里面的方法，会自动绘制 UI 界面，来实现相对应的接口功能。
+	这个类是「可信 ID」的 UI 类，调用里面的方法，会自动绘制 UI 界面，来实现相对应的接口功能。
 |名称|使用方法|
 |---|---|
 |+smsCodeLoginWithDeafultUI|调用这个方法，会打开一个请求短信验证码的界面，可以进行短信验证码登录的操作。|

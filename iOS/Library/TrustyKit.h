@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 /**
- *  SDK UI 接口类
+ *  TrustyKit 是「可信用户系统」的 UI 接口类。
+ *
+ *  在使用「可信用户系统」时，直接调用该类中的方法，即可在开发者的项目中添加 UI 界面，从而间化接口的调用。
  */
 @interface TrustyKit : NSObject
 

@@ -10,71 +10,79 @@
 #import "TrustySession.h"
 
 /**
- 可信 ID 接口类
+ * Trusty 是「拙政云 -- 可信用户系统」的主类，提供全局安全设置的静态方法。
+ *
+ * 在使用「拙政云」前，需要在 `application:didFinishLaunchingWithOptions:` 中调用 setAppID:appSecret: 进行全局安全设置。
  */
 @interface Trusty : NSObject
 
+#pragma mark - Trusty 的单例及 TrustySession 属性获取
 /**
- *  单例方法实例化对象
+ *  @name 单例
+ */
+/**
+ *  获取 Trusty 单例对象。在正确设置 AppID 和 AppSecret 后，通过 Trusty 单例对象的 session 进行注册、登录、鉴权操作。
  *
- *  @return 返回实例化对象
+ *  @return `Trusty` 的单例对象。
  */
 + (Trusty *)sharedInstance;
 
 /**
- *  获取 Session 信息
+ *  @name 属性
+ */
+/**
+ *  用来存储对话状态，进行用户系统操作。
  *
- *  @return 返回 session 信息
+ *  @return 返回 `TrustySession` 对象。
  */
 - (TrustySession *)session;
 
+#pragma mark -
+#pragma mark - 安全设置
+
 /**
- *  启动项目第一时间初始化这里，在此处传入由服务器获取到的信息
+ *  @name 全局安全设置
+ */
+/**
+ *  @brief 对「可信用户系统」进行全局安全信息设置。
  *
- *  @param appID     appID
- *  @param appSecret appSecret
+ *  @param appID     应用的「APP ID」，在你[创建应用](http://open.humbleadmin.io)后，可以在 控制台 -› 设置 -› 安全设置 里找到应用对应的「APP ID」。
+ *  @param appSecret 应用的「APP SECRET」，在你[创建应用](http://open.humbleadmin.io)后，可以在 控制台 -› 设置 -› 查看Secret 里找到应用对应的「APP SECRET」。
  */
 + (void)setAppID:(NSString *)appID appSecret:(NSString *)appSecret;
 
 /**
- *  获取 AppID 值
+ *  @brief 获取「APP ID」信息。
  *
- *  @return AppID 值
+ *  @return 存储的「APP ID」字符串，如果没有设置则返回空字符串。
  */
 + (NSString *)getAppID;
 
 /**
- *  获取 App Secret 值
+ *  @brief 获取「APP SECRET」信息。
  *
- *  @return 返回 App 的算子值
+ *  @return 存储的「APP SECRET」字符串，如果没有设置则返回空字符串。
  */
 + (NSString *)getAppSecret;
 
 /**
- *  设置 App 自身的 URL Schema
- *
- *  @param appSchema 传入获取到的 URL Schema 信息
+ *  @name 已作废
  */
-+ (void)setAppSchema:(NSString *)appSchema;
-
 /**
- *  获取 App Schema 值
+ *  @brief 对「可信用户系统」进行安全信息设置，此处设置的是「USC OpenID 端口」。
  *
- *  @return App Schema 值
- */
-+ (NSString *)getAppSchema;
-
-/**
- *  设置 App 自身的 USCOpenIDPort
+ *  @param USCOpenIDPort 应用的「USC OpenID 端口」，在你[创建应用](http://open.humbleadmin.io)后，可以在 控制台 -› 设置 -› USC 信息 里找到应用对应的「OpenID 端口」。
  *
- *  @param USCOpenIDPort 由网站获取的 USC OpenID Port 值传入到 SDK
+ *  @deprecated in version 0.6.2
  */
 + (void)setUSCOpenIDPort:(NSString *)USCOpenIDPort;
 
 /**
- *  获取 USC OpenID Port 值
+ *  @brief 获取「USC OpenID 端口」信息。
  *
- *  @return USC OpenID Port 值
+ *  @return 通过 `+ setUSCOpenIDPort:` 设置的「USC OpenID 端口」信息，如果没有设置则返回空白字符串："" 。
+ *
+ *  @deprecated in version 0.6.2
  */
 + (NSString *)getUSCOpenIDPort;
 
