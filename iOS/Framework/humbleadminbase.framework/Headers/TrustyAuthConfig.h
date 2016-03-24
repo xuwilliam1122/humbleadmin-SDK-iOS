@@ -14,9 +14,13 @@
 typedef NS_ENUM(int, TrustyAuthenticateType)
 {
     /**
+     *  未设置任何登录方式。
+     */
+    TrustyAuthenticateTypeNone = 0,
+    /**
      *  以短信验证码的方式。
      */
-    TrustyAuthenticateTypeSMS = 0,    
+    TrustyAuthenticateTypeSMS = 1,
 };
 
 /**
@@ -31,6 +35,7 @@ typedef NS_ENUM(int, TrustyAuthenticateType)
 /**
  *  @name 初始化
  */
+
 /**
  *  通过登录方式、用户名，初始化一个 `TrustyAuthConfig` 对象。
  *
@@ -38,9 +43,12 @@ typedef NS_ENUM(int, TrustyAuthenticateType)
  *
  *  `TrustyAuthConfig` 对象将被传递给 `TrustySession` 对象，以决定  `TrustySession` 的行为。
  *
+ *  @param authenticateType 注册、登录、鉴权方式。
+ *  @param userName         终端用户的用户名。
+ *
  *  @return 一个新的 `TrustyAuthConfig` 对象。
  */
-- (instancetype)init;
+- (instancetype)initWithAuthenticateType:(TrustyAuthenticateType)authenticateType userName:(NSString *)userName;
 
 /**
  *  @name 配置属性

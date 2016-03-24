@@ -31,11 +31,22 @@
  *  @name 属性
  */
 /**
- *  用来存储对话状态，进行用户系统操作。
+ *  获取被持久化存储的 `TrustySession` 对象。
  *
- *  @return 返回 `TrustySession` 对象。
+ * 「可信用户系统」会持久化存储当前有效的登录会话，即使重新打开 App，也能通过该方法取回会话。
+ *
+ *  @return `TrustySession` 对象。
  */
-- (TrustySession *)session;
+- (TrustySession *)currentSession;
+
+/**
+ *  获取被持久化存储的 `TrustyUser` 对象。
+ *
+ * 「可信用户系统」会持久化存储当前登录成功的用户，即使重新打开 App，也能通过该方法取回用户信息。
+ *
+ *  @return `TrustyUser` 对象。
+ */
+- (TrustyUser *)currentUser;
 
 #pragma mark -
 #pragma mark - 安全设置

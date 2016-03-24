@@ -23,9 +23,11 @@
 /**
  *  使用 TrustyAuthConfig 初始化一个 `TrustySession` 的对象。
  *
- *  @return `TrustySession` 的对象。
+ *  @param  authConfig  配置对象。
+ *
+ *  @return             `TrustySession` 的对象。
  */
-- (instancetype)init;
+- (instancetype)initWithTrustyAuthConfig:(TrustyAuthConfig *)authConfig;
 
 /**
  *  @name 登录、鉴权
@@ -33,12 +35,10 @@
 /**
  *  向服务器发起登录请求，根据 authConfig 属性的不同，请求的行为也将有所不同。
  *
- *  @param authConfig 登录设置。 （去掉这个参数）
  *  @param trustyUser 登录成功后，回调写入的 TrustyUser 对象。
  *  @param block      回调结果。
  */
-- (void)authenticate:(TrustyAuthConfig *)authConfig
-          trustyUser:(TrustyUser *)trustyUser
+- (void)authenticate:(TrustyUser *)trustyUser
                block:(TrustyBooleanResultBlock)block;
 
 /**
