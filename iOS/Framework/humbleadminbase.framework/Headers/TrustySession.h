@@ -61,17 +61,17 @@
  *  @name 属性
  */
 /**
- *  终端用户鉴权成功后，「可信用户系统」服务器分配的安全令牌。
+ *  登录成功后，服务器返回的安全令牌。
  */
 @property (nonatomic, retain, readonly) NSString *authToken;
 
 /**
- *  存储「可信用户系统」设置的 [TrustyAuthconfig](../Classes/TrustyAuthConfig.html) 属性。
+ *  该会话正在使用的配置属性。
  */
 @property (nonatomic, retain, readonly) TrustyAuthConfig *authConfig;
 
 /**
- *  存储登录成功的终端用户信息的对象。
+ *  登录成功后，服务器返回的终端用户对象。
  */
 @property (nonatomic, retain, readonly) TrustyUser *trustyUser;
 

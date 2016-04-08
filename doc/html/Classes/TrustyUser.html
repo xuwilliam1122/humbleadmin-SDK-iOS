@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
 </head>
 <body class="appledoc">
 	<header>
@@ -62,6 +62,8 @@
 		
 		<option value="//api/name/userID">userID</option>
 		
+		<option value="//api/name/userName">userName</option>
+		
 	</optgroup>
 	
 
@@ -106,11 +108,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p><code>TrustyUser</code> 是「可信用户系统」从服务器获取的「终端用户」在本地的持久化对象。</p>
-
-<p>它具有一个最小可用的「终端用户」所需的成员属性：唯一且不变的 id、手机号码、邮箱等。</p>
-
-<p>当然，你可以扩展这个类，增加你自己的用户属性、鉴权、注册、验证方法。</p>
+						<p>可信 ID 对象类</p>
 					</div>
 					
 					
@@ -121,69 +119,8 @@
 						<a title="Tasks" name="tasks"></a>
 						
 
-						<a title="初始化方法" name="task_初始化方法"></a>
-						<h2 class="task-title">初始化方法</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/init" title="init"></a>
-	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>初始化一个 <code>TrustyUser</code> 对象。
-将 <code>TrustyUser</code> 对象用于 <a href="../Classes/TrustySession.html">TrustySession</a> 的登录，当登录成功后，<a href="../Classes/TrustySession.html">TrustySession</a> 会填充 <code>TrustyUser</code> 对象的 <a href="#//api/name/userID">userID</a>、<a href="#//api/name/phoneNumber">phoneNumber</a>、<a href="#//api/name/email">email</a> 等属性。</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>TrustyUser 对象</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>初始化一个 <code>TrustyUser</code> 对象。
-将 <code>TrustyUser</code> 对象用于 <a href="../Classes/TrustySession.html">TrustySession</a> 的登录，当登录成功后，<a href="../Classes/TrustySession.html">TrustySession</a> 会填充 <code>TrustyUser</code> 对象的 <a href="#//api/name/userID">userID</a>、<a href="#//api/name/phoneNumber">phoneNumber</a>、<a href="#//api/name/email">email</a> 等属性。</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TrustyUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
 						
-
-						<a title="终端用户属性" name="task_终端用户属性"></a>
-						<h2 class="task-title">终端用户属性</h2>
+						
 
 						<div class="task-list">
 							<div class="section-method">
@@ -198,7 +135,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>用户 ID，无论采用那种注册、登录、鉴权方式，「可信用户系统」都将为每一位终端用户分配唯一且不变的标识：userID。</p>
+				<p>用户的 UserID 信息</p>
 			</div>
 			
 		    
@@ -215,7 +152,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>用户 ID，无论采用那种注册、登录、鉴权方式，「可信用户系统」都将为每一位终端用户分配唯一且不变的标识：userID。</p>
+				<p>用户的 UserID 信息</p>
 			</div>
 			
 
@@ -244,7 +181,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>终端用户的手机号码，当「验证手机号码」功能开启时，服务器会向终端用户的手机发送一条六位数字的验证短信。验证码的有效期是十五分钟。</p>
+				<p>用户的手机号码信息</p>
 			</div>
 			
 		    
@@ -261,7 +198,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>终端用户的手机号码，当「验证手机号码」功能开启时，服务器会向终端用户的手机发送一条六位数字的验证短信。验证码的有效期是十五分钟。</p>
+				<p>用户的手机号码信息</p>
 			</div>
 			
 
@@ -290,7 +227,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>终端用户的电子邮箱，当「验证邮箱」功能开启时，服务器会向终端用户的邮箱发送一封激活邮件。</p>
+				<p>用户的邮箱信息</p>
 			</div>
 			
 		    
@@ -307,7 +244,104 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>终端用户的电子邮箱，当「验证邮箱」功能开启时，服务器会向终端用户的邮箱发送一封激活邮件。</p>
+				<p>用户的邮箱信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustyUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userName" title="userName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userName">&nbsp;&nbsp;userName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用户注册后得以用户名</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) NSString *userName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用户注册后得以用户名</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TrustyUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化对象</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回初始化对象</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化对象</p>
 			</div>
 			
 
@@ -339,10 +373,10 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-03-24</p>
+						<p class="copyright">Copyright &copy; 2016 humbleadmin.io. All rights reserved. Updated: 2016-04-08</p>
 						
 						
-						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
 						
 					</div>
 				</footer>

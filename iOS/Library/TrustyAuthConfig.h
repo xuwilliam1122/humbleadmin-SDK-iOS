@@ -84,6 +84,10 @@ typedef void (^TrustyBooleanResultBlock)(BOOL succeeded, NSError *error);
  */
 typedef void (^TrustyDictionaryResultBlock)(NSDictionary * dictionary, NSError *error);
 
-
-
-
+/**
+ *  DUL/CUL 登录完成后结果的 Block 返回方式
+ *
+ *  @param succeeded 登录是否成功
+ *  @param error  错误提示
+ */
+typedef void (^TrustyAuthenticationCompletion)(BOOL succeed, NSError *error);
