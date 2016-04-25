@@ -28,14 +28,13 @@
 |名称|使用方法|
 |---|---|
 |+sharedInstance|`Trusty` 对象的单例方法，实例化 `Trusty` 对象时调用。|
-|-session|`Trusty` 实例化之后调用该方法，可获取终端用户的 `session` 信息。|
+|-currentSession|`Trusty` 实例化之后调用该方法，可获取终端用户的 `session` 信息。|
+|-currentUser|`Trusty` 实例化之后调用该方法，可获取终端用户的 `user` 信息。|
 |+setAppID:appSecret:|	设置 `AppID` 和 `AppSecret` 信息。|
 |+getAppID	|获取 `AppID`。|
 |+getAppSecret|获取 `AppSecret`。|
-|+setAppSchema:|设置 `AppSchema`。|
-|+getAppSchema|获取 `AppSchema`。|
-|+setUSCOpenIDPort:|设置 `USC OpenID` 端口。|
-|+getUSCOpenIDPort|获取 `USC OpenID` 端口。|
+
+
 
 ###TrustyAuthConfig.h###
 	这个类是设置终端用户登录方法，以及传入用户名所要调用的类，使用前需要进行对象实例化。

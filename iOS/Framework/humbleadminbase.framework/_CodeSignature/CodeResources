@@ -8,13 +8,17 @@
 		<data>
 		kIr03SrZwwD4KOvs/+NIfPlF370=
 		</data>
+		<key>Headers/TrustyAppearance.h</key>
+		<data>
+		XeoNWbQbDHK+q51eiOz9EcFITAc=
+		</data>
 		<key>Headers/TrustyAuthConfig.h</key>
 		<data>
 		gWQTK0NoFl8zEht/w/oLuMoBqro=
 		</data>
 		<key>Headers/TrustyKit.h</key>
 		<data>
-		flZaLccWqy8uqLG8PztaYn3W8dY=
+		6H0b0/Aoz5L5n0oaP/Vke2SmspI=
 		</data>
 		<key>Headers/TrustySession.h</key>
 		<data>
@@ -28,9 +32,21 @@
 		<data>
 		3UeIM31uhKLcOxybGe68fVum2V4=
 		</data>
+		<key>humbleadminbase.bundle/Icon-60.png</key>
+		<data>
+		duWDf6C3oWk7VoTre+QoAwoow5E=
+		</data>
+		<key>humbleadminbase.bundle/Icon-60.tiff</key>
+		<data>
+		HJKhefOCFWyUIWa4CQi/vj7iyyI=
+		</data>
 		<key>humbleadminbase.bundle/Info.plist</key>
 		<data>
 		iJtEVDKGNomDLdabdZ62WhIbx2k=
+		</data>
+		<key>humbleadminbase.bundle/Slice.png</key>
+		<data>
+		ZxTfml+W9u4Pp1ax3UFFA3+DfSQ=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/0Zl-Ge-QUH-view-NTM-rt-lyb~ipad.nib/objects-8.0+.nib</key>
 		<data>
@@ -82,19 +98,19 @@
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		XojO89oE6ETpHFyPVsJtgxTxoOk=
+		1tBO95mqIFJ5zelZuiWfr0nKzA8=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC~ipad.nib/runtime.nib</key>
 		<data>
-		7PCdAtKcoJmPOr2dtLu7mbAAo4Q=
+		fTFmBJXgVfqMmFEH4ABSeacaqy8=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		wmqnH7CMqjpUcCaqenEhw63tQLg=
+		ZtVZ1Ywq3eV1DNoUWjOYRXofA8k=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC~iphone.nib/runtime.nib</key>
 		<data>
-		CEIaGtU1+8kGXDzUvqw6A2KnqbY=
+		kC0AMcJsz8DTqMqNOnUaiiKzZcw=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/ComfirmNewPwdViewController~ipad.nib/objects-8.0+.nib</key>
 		<data>
@@ -160,53 +176,85 @@
 		<data>
 		MC4UzR2eA6rK+w2rSlRAUs6SNQA=
 		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginSuccessViewController~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		+NqbJeYCnTVMEapmAzkdUwHOdl8=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginSuccessViewController~ipad.nib/runtime.nib</key>
+		<data>
+		THxynZSXyOT97k1/GTC8XUtq6hg=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginSuccessViewController~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		dsjtecUIukhj7FgznNHa7l48nzM=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginSuccessViewController~iphone.nib/runtime.nib</key>
+		<data>
+		9SMleYs9by8W002tjciGagoUjqI=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginViewController~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		HNcEgHgxh1eDNj4bqXVJ73O/oC0=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginViewController~ipad.nib/runtime.nib</key>
+		<data>
+		qF1jNwbrjvdT/IIA3ORlhsoXu7s=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginViewController~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		pDP6ciPDmSmDtk39Hisj+bJUbCk=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginViewController~iphone.nib/runtime.nib</key>
+		<data>
+		tzqNG8OjacoPf4sAHiQoYrN4qqI=
+		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterVerifyViewController~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		r9v2FZ+pkiF8YBT6ZUNx2IiiyY0=
+		tbLiZmcT6+kFbT6AbhIXPrFbgOE=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterVerifyViewController~ipad.nib/runtime.nib</key>
 		<data>
-		BnSj90ctfvnGTrC4KauqWTxrKTY=
+		3MTY0NCV1wAittShvTnEbse41Wg=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterVerifyViewController~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		ytKocAYTYTz5EUj6xg8q1+GI4IU=
+		hpcn6huxErnXXyFv4zeW33RVk8c=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterVerifyViewController~iphone.nib/runtime.nib</key>
 		<data>
-		jQBzanJKiMQNsZ7UbCgnxNpIdlk=
+		gjSi38Lt0S1kqPtJTjzyPp5Z2t4=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterViewController~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		HBPTxnQVV8rEoD8LWpE4BhHyQgg=
+		BotCUla0LXeh78HRI+yO1IGXNwU=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterViewController~ipad.nib/runtime.nib</key>
 		<data>
-		O05Uaz7exngJWtQcvjfpl/1j/Ys=
+		asyZ84RKbqDzORJIsdgSscV7spI=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterViewController~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		KtLpbgUFx+xkkGNymthZjAJJSOE=
+		1dNGFu7Ptu8oz2jbnfvVb50XUPo=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterViewController~iphone.nib/runtime.nib</key>
 		<data>
-		eXL2SGz2S3YN07VpZSPaYeJ9rEQ=
+		SnhTZf9OFRLm+Fc0H90FeltG2kY=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RequestCodeViewController~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		j7idEVYbuAW7EZeMOdzegQREpnQ=
+		YufMPiyxa6lOs97MZqJlYC5OdVA=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RequestCodeViewController~ipad.nib/runtime.nib</key>
 		<data>
-		UiojnCv02C2TRi4IMKN4Ga7BlTE=
+		jfkyhCLCAb5x/SXJUo9qjXuLT4c=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RequestCodeViewController~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		HwZUb8sw13USKjCQ1c7ZpeGByso=
+		txijbyGr8Cy+Hy6B9w1uOBgfsAw=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RequestCodeViewController~iphone.nib/runtime.nib</key>
 		<data>
-		qtce0fDddnSRll0ITQDkeQ5UbdY=
+		ERlA4vScEWrX5dCokOKRODNunZ0=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RetrievePwdViewController~ipad.nib/objects-8.0+.nib</key>
 		<data>
@@ -224,85 +272,101 @@
 		<data>
 		fd9tczhV/ZVMYNqP6ePZr8A/bXk=
 		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/Ukj-r6-h6C-view-YUw-g6-Ijn~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		x45tILHPLbAJx/9P3NWVp9FIYKU=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/Ukj-r6-h6C-view-YUw-g6-Ijn~ipad.nib/runtime.nib</key>
+		<data>
+		0lrh/WKNi3zOIwuDLR+O7Lr9Wbk=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/Ukj-r6-h6C-view-YUw-g6-Ijn~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		P22n4ixWcUOG5SYI3YrPMWdBs5Q=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/Ukj-r6-h6C-view-YUw-g6-Ijn~iphone.nib/runtime.nib</key>
+		<data>
+		6ezCVYuu7VvjO3C3ueoG1nKr6q4=
+		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/UserNameLoginViewController~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		jhYpUKVQCwicNRzH5vZmLuKL7PM=
+		sUhJVUtRvT511HWXlqgc4VEu4VY=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/UserNameLoginViewController~ipad.nib/runtime.nib</key>
 		<data>
-		ruduvBIU+PK8PQOHt93quMEQaxs=
+		0z6/Tyr7c3XTXvwIjeaYCFtoJPU=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/UserNameLoginViewController~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		/lMWTGN+wJrOTSI2ZZKxQDllmng=
+		NmZ0u2v2+1T0DLbTPYZCGd2W680=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/UserNameLoginViewController~iphone.nib/runtime.nib</key>
 		<data>
-		bW2jSnhOVNAm6EHWqV+CucjHA08=
+		U6uzX/Y0ctXnYUDUiA5i9cd0xxg=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/VerifyConfirmatonCodeViewController~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		yuKCB8BbgOKIhFl+L3W8X/AfAB4=
+		GrxiCsov7QXHDk8wYoehSKn+fuk=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/VerifyConfirmatonCodeViewController~ipad.nib/runtime.nib</key>
 		<data>
-		+qyjA10o0vfzZiLthT1m7ZkggJo=
+		cnijKL/ZOBFVbJ6qEYy25SQyRBw=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/VerifyConfirmatonCodeViewController~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		W8W30oHtpO3d8g7gP3oAQfrzKbU=
+		m5A84fZBHy5qZMfQgLayXq9XfR8=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/VerifyConfirmatonCodeViewController~iphone.nib/runtime.nib</key>
 		<data>
-		1irCPSOUQoD/eQrskhEKIq2J2wo=
+		9n2BuiJW9GzBwYjkLOdGbYP20jQ=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/W32-G8-1aR-view-qQw-sf-Q2Q~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		bqeeXujpZkC/aHcGMins2cWDfwI=
+		q7EL2wRUv9NA/W7ufbZ4VhRM8/w=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/W32-G8-1aR-view-qQw-sf-Q2Q~ipad.nib/runtime.nib</key>
 		<data>
-		EkWnuunxeeACYD7VJ2hpuMW1Etw=
+		6tZto8btPDovJ2CF90/Ad/p69WI=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/W32-G8-1aR-view-qQw-sf-Q2Q~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		RLM+U8c6nZPiardTEH6OPw0U4/U=
+		oquSmVcm5bfrs9PENJfJs5vlTks=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/W32-G8-1aR-view-qQw-sf-Q2Q~iphone.nib/runtime.nib</key>
 		<data>
-		I+mFA/x9IabRVL6q7IqzjrZoY30=
+		4ZiISqE/IDlrEM7RYCibuXYZGG0=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Y5R-GA-8T9-view-1FB-aQ-C1J~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		h4X1aoveci9pTpfJdajQSrmoh5s=
+		ZgTrReNVH4UQ7qbdKOZltupZnEw=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Y5R-GA-8T9-view-1FB-aQ-C1J~ipad.nib/runtime.nib</key>
 		<data>
-		QUCh2Jfv8Rgwcsz8FQpVo3rhdBc=
+		S88RFxVJkwFii33Zi3jLU3zqqeo=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Y5R-GA-8T9-view-1FB-aQ-C1J~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		hibfUdPlFK4U6MrLW0QJqKtscmQ=
+		jzNWsYy0NNLMqxHaKTBJBuHvFU8=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Y5R-GA-8T9-view-1FB-aQ-C1J~iphone.nib/runtime.nib</key>
 		<data>
-		3ZbkJGj06ue1qOE2SuC7/TOxfTE=
+		BUIUL4sqam9hE46rLfGhKoKuhxs=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Zey-86-8U1-view-4Vp-fi-T3d~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		RmrtljfBj0wt+Dq1SrgyD1nnlz4=
+		6SJiXa9CbvmRNTy1n0s2h7Lf/KE=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Zey-86-8U1-view-4Vp-fi-T3d~ipad.nib/runtime.nib</key>
 		<data>
-		vA06rUlFRUyIY8CygJ9gaL6k+s0=
+		YSbYbBoCrI5YefZYR4r5ULveTYI=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Zey-86-8U1-view-4Vp-fi-T3d~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		5W/R7fccwitBnyFo8sNqbDHsGwk=
+		p9CQk1jwitLHua1Lu+ltorPjpJ0=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Zey-86-8U1-view-4Vp-fi-T3d~iphone.nib/runtime.nib</key>
 		<data>
-		9DEIyN1u83H/9ELJ44YVIqxoUy8=
+		A4xVG+W6kOkhj5u9G5EKXfVemwA=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/fp4-WI-pNI-view-493-zV-xgC~ipad.nib/objects-8.0+.nib</key>
 		<data>
@@ -336,41 +400,117 @@
 		<data>
 		gbtk9a0RqEj7ofRZRhmDHS9YiZ8=
 		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/mlh-8I-6pL-view-wwJ-eO-gwi~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		fvGYnN+2GCzzx3upDbUZPzrBYW8=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/mlh-8I-6pL-view-wwJ-eO-gwi~ipad.nib/runtime.nib</key>
+		<data>
+		cWOwYXUBgWzkBGc5zoF90jO44w0=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/mlh-8I-6pL-view-wwJ-eO-gwi~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		/r1E4MXl3wulb+urLYNapEqEnoU=
+		</data>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/mlh-8I-6pL-view-wwJ-eO-gwi~iphone.nib/runtime.nib</key>
+		<data>
+		+SdSpPBO+qGWwIjzcIZ3STusRF4=
+		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/xFB-Aa-KOd-view-0za-vH-PjZ~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		Rp2TnUVepcmpkcka8V9/LQlE/98=
+		FPrlZoG7h3Iuw84RkWhVZul+9g8=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/xFB-Aa-KOd-view-0za-vH-PjZ~ipad.nib/runtime.nib</key>
 		<data>
-		5V6Nb/hh67b2BfutRut9rncj+90=
+		IfsQVhQJYW4zwYgwvJB1LGZr7dE=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/xFB-Aa-KOd-view-0za-vH-PjZ~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		h08NUtFXlPIx/zuHalqO6hQIxKo=
+		hd2Q4nfe9kSS0IQweY+pIPqnAdE=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/xFB-Aa-KOd-view-0za-vH-PjZ~iphone.nib/runtime.nib</key>
 		<data>
-		PI6NbjZjYuHSPjJDAuNdP0dn9OQ=
+		5ys7ZIe0gUGxA1LQT+blVNhQDsM=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI~ipad.storyboardc/Info-8.0+.plist</key>
 		<data>
-		Y9MF07gsm/TQ6+3VLXw5HbdKSks=
+		u6sAj6Eenmp9qvm8+lic2idNNds=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI~ipad.storyboardc/Info.plist</key>
 		<data>
-		+Lc0Iw4NmHaTL3TjU0rPH+Z7khc=
+		u6sAj6Eenmp9qvm8+lic2idNNds=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI~iphone.storyboardc/Info-8.0+.plist</key>
 		<data>
-		By5ZOEP8g481ofwqLMBYHF9tE1c=
+		u6sAj6Eenmp9qvm8+lic2idNNds=
 		</data>
 		<key>humbleadminbase.bundle/defaultUI~iphone.storyboardc/Info.plist</key>
 		<data>
-		+Lc0Iw4NmHaTL3TjU0rPH+Z7khc=
+		u6sAj6Eenmp9qvm8+lic2idNNds=
 		</data>
 		<key>humbleadminbase.bundle/humbleadminbase</key>
 		<data>
-		gw03Quz2gpCRKBRLlVUB7daqNpM=
+		Y4QDrKyZ+z1YckALzZFO3DNcVSI=
+		</data>
+		<key>humbleadminbase.bundle/qq.png</key>
+		<data>
+		duWDf6C3oWk7VoTre+QoAwoow5E=
+		</data>
+		<key>humbleadminbase.bundle/qq@2x.png</key>
+		<data>
+		lNru/zB1lIQKzwhhnWuHKJQoETE=
+		</data>
+		<key>humbleadminbase.bundle/qq@32px.png</key>
+		<data>
+		lNru/zB1lIQKzwhhnWuHKJQoETE=
+		</data>
+		<key>humbleadminbase.bundle/qqLogin.png</key>
+		<data>
+		duWDf6C3oWk7VoTre+QoAwoow5E=
+		</data>
+		<key>humbleadminbase.bundle/wechatLogin.png</key>
+		<data>
+		tbqY+eeynL4sxXu6HCN/RmI5Rfg=
+		</data>
+		<key>humbleadminbase.bundle/weibo.png</key>
+		<data>
+		IpSNk3JbfbRPKcxaYTteUayf978=
+		</data>
+		<key>humbleadminbase.bundle/weibo@2x.png</key>
+		<data>
+		/e1M+jqJURCqEz1LNU59ZltdBNA=
+		</data>
+		<key>humbleadminbase.bundle/weibo@32px.png</key>
+		<data>
+		/e1M+jqJURCqEz1LNU59ZltdBNA=
+		</data>
+		<key>humbleadminbase.bundle/weibo@48px.png</key>
+		<data>
+		qk447cMyy5Qe4X51pWlaKcgjEzI=
+		</data>
+		<key>humbleadminbase.bundle/weibo@64px.png</key>
+		<data>
+		IpSNk3JbfbRPKcxaYTteUayf978=
+		</data>
+		<key>humbleadminbase.bundle/weiboLogin.png</key>
+		<data>
+		IpSNk3JbfbRPKcxaYTteUayf978=
+		</data>
+		<key>humbleadminbase.bundle/weixin.png</key>
+		<data>
+		tbqY+eeynL4sxXu6HCN/RmI5Rfg=
+		</data>
+		<key>humbleadminbase.bundle/weixin@2x.png</key>
+		<data>
+		d2pGFYPpbDhr8sq3nyOKc3xHXBI=
+		</data>
+		<key>humbleadminbase.bundle/weixin@32px.png</key>
+		<data>
+		d2pGFYPpbDhr8sq3nyOKc3xHXBI=
+		</data>
+		<key>humbleadminbase.bundle/weixin@64px.png</key>
+		<data>
+		tbqY+eeynL4sxXu6HCN/RmI5Rfg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -384,6 +524,17 @@
 			<key>hash2</key>
 			<data>
 			u0D/IQW0RNwyz0c1DIiBvLYYDO7aax39TWv0ybjMsNo=
+			</data>
+		</dict>
+		<key>Headers/TrustyAppearance.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XeoNWbQbDHK+q51eiOz9EcFITAc=
+			</data>
+			<key>hash2</key>
+			<data>
+			TdhOK628VVSccjYQZFZPG/QmXOVxqtGGzdJMo+yOnTo=
 			</data>
 		</dict>
 		<key>Headers/TrustyAuthConfig.h</key>
@@ -401,11 +552,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			flZaLccWqy8uqLG8PztaYn3W8dY=
+			6H0b0/Aoz5L5n0oaP/Vke2SmspI=
 			</data>
 			<key>hash2</key>
 			<data>
-			/CZPAcPvB6yQguJj3B4arRCtvym76uXYPXIcumVTix8=
+			fYqu5xQiDqfWo3WCktgVqrjQSFTbC09y1kAv23vZhck=
 			</data>
 		</dict>
 		<key>Headers/TrustySession.h</key>
@@ -430,6 +581,28 @@
 			sCLaf1ubChqaR1aOCloxuLxhmnzC124o2oqCdTF419c=
 			</data>
 		</dict>
+		<key>humbleadminbase.bundle/Icon-60.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			duWDf6C3oWk7VoTre+QoAwoow5E=
+			</data>
+			<key>hash2</key>
+			<data>
+			iIfpLuAm8nR4cyFLIpcQ3a8jy7o6QB4mnFkwlHXQb8w=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/Icon-60.tiff</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HJKhefOCFWyUIWa4CQi/vj7iyyI=
+			</data>
+			<key>hash2</key>
+			<data>
+			TkC+91hI/PJHeNB8RBFnye4UTR6/x05yBEXK2fQF2MQ=
+			</data>
+		</dict>
 		<key>humbleadminbase.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -439,6 +612,17 @@
 			<key>hash2</key>
 			<data>
 			yg/4XEHP7cTPmR75lR6cINlz2SERUPrtg9XNYHSSBV4=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/Slice.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZxTfml+W9u4Pp1ax3UFFA3+DfSQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			QF2Bhwh95J3b2o+IrlMD8Nvh7zrOtia8obW2dlb9L0w=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/0Zl-Ge-QUH-view-NTM-rt-lyb~ipad.nib/objects-8.0+.nib</key>
@@ -577,44 +761,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XojO89oE6ETpHFyPVsJtgxTxoOk=
+			1tBO95mqIFJ5zelZuiWfr0nKzA8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5De+0KugHR1wVgjVfxnkYkA2Of2c2YzCrzUCCb9DFs4=
+			3VSGyqy705wrb/osW26uesbhCKtmwNUQMASZm6ynNl8=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7PCdAtKcoJmPOr2dtLu7mbAAo4Q=
+			fTFmBJXgVfqMmFEH4ABSeacaqy8=
 			</data>
 			<key>hash2</key>
 			<data>
-			TloaAVP3sMKa/uMqAU6uhi112OLAShSAtZxNgn/efXc=
+			6+X3/9lSy9stHs+1quqyx5A5Y1eBIwWiZb/msXgqvrs=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wmqnH7CMqjpUcCaqenEhw63tQLg=
+			ZtVZ1Ywq3eV1DNoUWjOYRXofA8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			AHrJUydMhbdKYJYMjZ0oH2yhbeLBegxnrtB1aWJusM8=
+			4GxFPPWJm6n/pSKGjcAerLQ0VJq2Dg86cC9wm9a7M9I=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CEIaGtU1+8kGXDzUvqw6A2KnqbY=
+			kC0AMcJsz8DTqMqNOnUaiiKzZcw=
 			</data>
 			<key>hash2</key>
 			<data>
-			GWIB1rGvrs84wydYGbFN/BvQucBgqmlLzyezIdLVTOQ=
+			ohaHES8Ve3c/wy0/DCzepteIsDmvI18Li65hgcyUi2o=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/ComfirmNewPwdViewController~ipad.nib/objects-8.0+.nib</key>
@@ -793,136 +977,224 @@
 			qVBFY7p4kIbP93HUUJezbQQBEovAITep8+J9jfGV2Fs=
 			</data>
 		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginSuccessViewController~ipad.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+NqbJeYCnTVMEapmAzkdUwHOdl8=
+			</data>
+			<key>hash2</key>
+			<data>
+			o3aiM2Q6Qgy2VCrw+cY6gjXS75mE8B4eWLfdPEkhYXw=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginSuccessViewController~ipad.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			THxynZSXyOT97k1/GTC8XUtq6hg=
+			</data>
+			<key>hash2</key>
+			<data>
+			UDfRfws5/6M6L3zDuZ0hJ26sa5ZO/Sx3DJId7gJ63Xw=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginSuccessViewController~iphone.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dsjtecUIukhj7FgznNHa7l48nzM=
+			</data>
+			<key>hash2</key>
+			<data>
+			tsvBTkdXGkN6tJvz8pddWub7ki2GTv5GP6tLH2nvA2k=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginSuccessViewController~iphone.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9SMleYs9by8W002tjciGagoUjqI=
+			</data>
+			<key>hash2</key>
+			<data>
+			DNpppeFqTlxTODXlmrTWIu39bhxjoLUknsMcPASxktk=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginViewController~ipad.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HNcEgHgxh1eDNj4bqXVJ73O/oC0=
+			</data>
+			<key>hash2</key>
+			<data>
+			7aOPDlYnVT0zBT3fzYlavcnPuu8VYcoFZIXY5lZ91Wc=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginViewController~ipad.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qF1jNwbrjvdT/IIA3ORlhsoXu7s=
+			</data>
+			<key>hash2</key>
+			<data>
+			E1DYwxrvyCNRXMcem5iWBXsXrz4tX+LCXdP5rb/Oplc=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginViewController~iphone.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pDP6ciPDmSmDtk39Hisj+bJUbCk=
+			</data>
+			<key>hash2</key>
+			<data>
+			w0OaMjbPW9yAQw4V4GFxLfWZ+RPR3cxXbHnQogEPsNo=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/LoginViewController~iphone.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tzqNG8OjacoPf4sAHiQoYrN4qqI=
+			</data>
+			<key>hash2</key>
+			<data>
+			sL1KZQbHiX8g7Em9Jvni0OkvWpgjKepX0CDCrkBnTa4=
+			</data>
+		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterVerifyViewController~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r9v2FZ+pkiF8YBT6ZUNx2IiiyY0=
+			tbLiZmcT6+kFbT6AbhIXPrFbgOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			sv2nNaK3x4kPku3HHeex8rxqdm5jV/BgcMxkRPdO/XI=
+			phkWKVWUv3cM8L2k5t9iUzQdRnLLzw+xLs8aXL2T8NY=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterVerifyViewController~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BnSj90ctfvnGTrC4KauqWTxrKTY=
+			3MTY0NCV1wAittShvTnEbse41Wg=
 			</data>
 			<key>hash2</key>
 			<data>
-			IsGDLmvHG5wh4GphKlQboMuPaukv4uPPEzJ2OSETPR8=
+			8q6Kv2CZNqGxYjFqOF4XhFZuOSaGWt2tzidY7EC0R0I=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterVerifyViewController~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ytKocAYTYTz5EUj6xg8q1+GI4IU=
+			hpcn6huxErnXXyFv4zeW33RVk8c=
 			</data>
 			<key>hash2</key>
 			<data>
-			HeZ1OUVanZrTwENeX6xuc0EKP6RAPfLsp9USa5ETh+E=
+			Qq4W9It+fAS8bfyoniuYckfm+AbcudDU2Q01PcYsJbw=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterVerifyViewController~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jQBzanJKiMQNsZ7UbCgnxNpIdlk=
+			gjSi38Lt0S1kqPtJTjzyPp5Z2t4=
 			</data>
 			<key>hash2</key>
 			<data>
-			n23QXUtIOZ+9R5iUUzTDA1YFZKRvFHGyhfCuQg8mk/I=
+			KXm3GSEvN2G8h5img6pbk9cTXdX7JaKt/gubumRaCXg=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterViewController~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HBPTxnQVV8rEoD8LWpE4BhHyQgg=
+			BotCUla0LXeh78HRI+yO1IGXNwU=
 			</data>
 			<key>hash2</key>
 			<data>
-			iWAo20gQVW4jreTF+e01vgKGJnzCMCy3n7dfrmUGjzU=
+			w/+StsOMxeLIvtCg6/f18/trWUDV4LkgAlJv2hA+l2I=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterViewController~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O05Uaz7exngJWtQcvjfpl/1j/Ys=
+			asyZ84RKbqDzORJIsdgSscV7spI=
 			</data>
 			<key>hash2</key>
 			<data>
-			NjQ0lGjtTLLhrbVFJ+W1EewzJz+9gmG7Mad+LcCrO1E=
+			xF59MdOVDOrTBjyCs//f0OxwSA1UahcvoNmXHSsOi+o=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterViewController~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KtLpbgUFx+xkkGNymthZjAJJSOE=
+			1dNGFu7Ptu8oz2jbnfvVb50XUPo=
 			</data>
 			<key>hash2</key>
 			<data>
-			+QjF2CYwthL/44xxlPId1dJUNmVPBcy1fvTUd7bQRbg=
+			NsNJEXxtDcrAGXid2c+GfB8V+EYFXS3P72BZ4s/fyw0=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RegisterViewController~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eXL2SGz2S3YN07VpZSPaYeJ9rEQ=
+			SnhTZf9OFRLm+Fc0H90FeltG2kY=
 			</data>
 			<key>hash2</key>
 			<data>
-			l3VVq5OmJcTAfwYjV3ZMtrXK6OSrsrFhj7guE2dd8I8=
+			O7Pqi/RfhJxQ6/hk7JhaOWJYWlFJerI98OnAK+zPdmc=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RequestCodeViewController~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			j7idEVYbuAW7EZeMOdzegQREpnQ=
+			YufMPiyxa6lOs97MZqJlYC5OdVA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hKwQaD6Wx4arVBWAa05icQcXmrI9DAJT3J5FW5+G6q8=
+			pVYSdFnDGsr9NHOD0gyuA9uiLm+cqp0N+LXTVlTQdeM=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RequestCodeViewController~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UiojnCv02C2TRi4IMKN4Ga7BlTE=
+			jfkyhCLCAb5x/SXJUo9qjXuLT4c=
 			</data>
 			<key>hash2</key>
 			<data>
-			Laupu1spi0t0qxvJwDV2KM/nYqMbi/XfaPYBgDfywF4=
+			Dp/XrzB4GrFlJqLrLhuHP3B2A0iM3JNBlfiCdk6hz1s=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RequestCodeViewController~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HwZUb8sw13USKjCQ1c7ZpeGByso=
+			txijbyGr8Cy+Hy6B9w1uOBgfsAw=
 			</data>
 			<key>hash2</key>
 			<data>
-			DfARw2wvRFo2KwKJre54SXGkufOqiLjc2IQ8P+tt6qg=
+			ZNlOOKBWmvZHzOv6utY3zNe1wvjn4MWgcOweNMAjSa8=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RequestCodeViewController~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qtce0fDddnSRll0ITQDkeQ5UbdY=
+			ERlA4vScEWrX5dCokOKRODNunZ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			VSz/+aJW0FD93n5CpXEAMCe8A2KU/2SQ32sPeoP50Lo=
+			MkKtD9SMeTgzNEm2ZlevLT+AUaxZcilYHV5/WP+tH6s=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/RetrievePwdViewController~ipad.nib/objects-8.0+.nib</key>
@@ -969,224 +1241,268 @@
 			BwgwE/ceZ+h3MwP52DEVCxfzqRx3D99OiVBPyWtU/8Y=
 			</data>
 		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/Ukj-r6-h6C-view-YUw-g6-Ijn~ipad.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x45tILHPLbAJx/9P3NWVp9FIYKU=
+			</data>
+			<key>hash2</key>
+			<data>
+			qEEixx5Y6BZl2uErcctN4/uDkQgg9e1quyaMAReReNA=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/Ukj-r6-h6C-view-YUw-g6-Ijn~ipad.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0lrh/WKNi3zOIwuDLR+O7Lr9Wbk=
+			</data>
+			<key>hash2</key>
+			<data>
+			tUSDrUIzODPxbHmxWb2LY3Xvkx+rosOR5sglDJ3QzQs=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/Ukj-r6-h6C-view-YUw-g6-Ijn~iphone.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P22n4ixWcUOG5SYI3YrPMWdBs5Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			KypZh4xuovIgBuc3zT5p1NwiroKNK7xh5MUyXWA9r08=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/Ukj-r6-h6C-view-YUw-g6-Ijn~iphone.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6ezCVYuu7VvjO3C3ueoG1nKr6q4=
+			</data>
+			<key>hash2</key>
+			<data>
+			VCt+n9AlppIB9P6vXM/yHb2x9ZQuK+14b7y4hmlxb2A=
+			</data>
+		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/UserNameLoginViewController~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jhYpUKVQCwicNRzH5vZmLuKL7PM=
+			sUhJVUtRvT511HWXlqgc4VEu4VY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4w2yTqefmsBUtDvLqRB/1H0qMmyhqtRV0W99SIUX3fQ=
+			mTmSIdsdWJEADxOiWana2mxRzjTkLb27h2INXOrUTD8=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/UserNameLoginViewController~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ruduvBIU+PK8PQOHt93quMEQaxs=
+			0z6/Tyr7c3XTXvwIjeaYCFtoJPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			EZUBcBAJcoPdMhYCi+VTCdKf2vCw0m0U4D2BN5cPjYs=
+			iTaJ4hvOju0D8A+7R2h7FpuY2VsrCrTck3XLmfSHNck=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/UserNameLoginViewController~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/lMWTGN+wJrOTSI2ZZKxQDllmng=
+			NmZ0u2v2+1T0DLbTPYZCGd2W680=
 			</data>
 			<key>hash2</key>
 			<data>
-			vo3j8Wn5mtqBwYE8pWMja2sPR4uZrUpvCdsA9BI9EG0=
+			r5YJzT57CZ1To876FBYNmmZccRwL14CTAKp96njaJqE=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/UserNameLoginViewController~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bW2jSnhOVNAm6EHWqV+CucjHA08=
+			U6uzX/Y0ctXnYUDUiA5i9cd0xxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			MpFpTfYOj9ZyWcYZ/b4u2F6I/yYqFzXC8l0Uw6Z9Kbg=
+			Ue/aPF9XEGogrdeH+IteQ9DV2EsLW/Qo9dWiFxhkGSk=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/VerifyConfirmatonCodeViewController~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yuKCB8BbgOKIhFl+L3W8X/AfAB4=
+			GrxiCsov7QXHDk8wYoehSKn+fuk=
 			</data>
 			<key>hash2</key>
 			<data>
-			OpRl86KKtu2hGUMF3cGmWcOSmclFU6ocDzy6pEaLdWE=
+			BN9iHxGw00Dxei5WlPOlFMWLDWAl8LrUMqwS0AXnEhM=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/VerifyConfirmatonCodeViewController~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+qyjA10o0vfzZiLthT1m7ZkggJo=
+			cnijKL/ZOBFVbJ6qEYy25SQyRBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			QFR3vansvtYXdIEsbZe2QY5WJSX+xwFvHL101gdel5I=
+			fYM6qEjs3FGV3g5AMafpzeH43b0CHEOY64qeljyOI/Q=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/VerifyConfirmatonCodeViewController~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W8W30oHtpO3d8g7gP3oAQfrzKbU=
+			m5A84fZBHy5qZMfQgLayXq9XfR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			7h43XE27rQE19AcpyAQkh1LE7Ti+nnY8h4dT06P5LJ4=
+			QFNqphniAxTTSorKh7csORx97og+hx9Gv1jNfrGdNm8=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/VerifyConfirmatonCodeViewController~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1irCPSOUQoD/eQrskhEKIq2J2wo=
+			9n2BuiJW9GzBwYjkLOdGbYP20jQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			aEBDsAv0zjh34tp6NOXqfJsDL0HQfJRn3XAs/2r0BF8=
+			nt4/BqSfPrPPaMs71z4TSGekfqmBhsh+5EP9SG6n9EU=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/W32-G8-1aR-view-qQw-sf-Q2Q~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bqeeXujpZkC/aHcGMins2cWDfwI=
+			q7EL2wRUv9NA/W7ufbZ4VhRM8/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			TpBR/87J5R0rCWPHa/jvI4CMvpG7QSGsN4qPHCb0H20=
+			qpNTDa1KJ0JggvBA/pDIBYQV8hURRUyFA6GG738OrUw=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/W32-G8-1aR-view-qQw-sf-Q2Q~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EkWnuunxeeACYD7VJ2hpuMW1Etw=
+			6tZto8btPDovJ2CF90/Ad/p69WI=
 			</data>
 			<key>hash2</key>
 			<data>
-			FcKg00pQYORyMY+9En+a19I6ynLikcBLQDM+GdrCfUc=
+			2Lko35Sab1fq5y9byg/5BNYJ8c8dJ8tm4uuASG4fn5o=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/W32-G8-1aR-view-qQw-sf-Q2Q~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RLM+U8c6nZPiardTEH6OPw0U4/U=
+			oquSmVcm5bfrs9PENJfJs5vlTks=
 			</data>
 			<key>hash2</key>
 			<data>
-			D63VNWKHrqWysbs98O0UGheiu+4SZ6c6RJjPqBriK6U=
+			cvylJmDb8AiGi6s1BPLEmI9FOL7vPzmiGvDnWLJbIME=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/W32-G8-1aR-view-qQw-sf-Q2Q~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I+mFA/x9IabRVL6q7IqzjrZoY30=
+			4ZiISqE/IDlrEM7RYCibuXYZGG0=
 			</data>
 			<key>hash2</key>
 			<data>
-			sLjZXDFxNr+bXGVki7JgE0uytn5X1Q6jTFhAP+w+3dE=
+			KwPkgQXMekB5pToxj+e8LL3H9YcIr016YAmknKH6OxI=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Y5R-GA-8T9-view-1FB-aQ-C1J~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h4X1aoveci9pTpfJdajQSrmoh5s=
+			ZgTrReNVH4UQ7qbdKOZltupZnEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			cnF2uTiNDDOXqo7ImSrwnFlaQn0tuHiRjK6bpGbHHFA=
+			PW/RCPBlhmnnBSkGX4q+6gKS00M23s84JLSIa1L6luA=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Y5R-GA-8T9-view-1FB-aQ-C1J~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QUCh2Jfv8Rgwcsz8FQpVo3rhdBc=
+			S88RFxVJkwFii33Zi3jLU3zqqeo=
 			</data>
 			<key>hash2</key>
 			<data>
-			g1RrajYIdu3Et+d4m0msutsmW9lhhgNbmvfDGR7HN08=
+			D0NqiunlxyXXhIlKAim0sGntQj6DCcaQ2Wirv16wIG8=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Y5R-GA-8T9-view-1FB-aQ-C1J~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hibfUdPlFK4U6MrLW0QJqKtscmQ=
+			jzNWsYy0NNLMqxHaKTBJBuHvFU8=
 			</data>
 			<key>hash2</key>
 			<data>
-			8SRCgGQCvktFA3GJLu0TqX9oWDBkTkD2XAYXOSJOKGc=
+			by/4d7+Q+pEYDnNHq8Gai8Hp0h0sz71w/ncCFaLDj0c=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Y5R-GA-8T9-view-1FB-aQ-C1J~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3ZbkJGj06ue1qOE2SuC7/TOxfTE=
+			BUIUL4sqam9hE46rLfGhKoKuhxs=
 			</data>
 			<key>hash2</key>
 			<data>
-			eMo5pi+8w0iP3kQQsUVA10ElBicW46zJnq6v8P/Qqc8=
+			yXDuGASkO9Q5zDztkJes8xlCj6wUOihxeM2ofAMraO0=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Zey-86-8U1-view-4Vp-fi-T3d~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RmrtljfBj0wt+Dq1SrgyD1nnlz4=
+			6SJiXa9CbvmRNTy1n0s2h7Lf/KE=
 			</data>
 			<key>hash2</key>
 			<data>
-			MWW4xZ5KK9LzPfV/TgUDUtRBs/rjUGwfvZAcQ8ZwxsA=
+			pr65J1mO4jVIEFyNjwx1VYs2hiTuG8zsFuotA3Ag0vc=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Zey-86-8U1-view-4Vp-fi-T3d~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vA06rUlFRUyIY8CygJ9gaL6k+s0=
+			YSbYbBoCrI5YefZYR4r5ULveTYI=
 			</data>
 			<key>hash2</key>
 			<data>
-			y23hDoJVkgwwWop7OvOWP7cIeE4W7cCH+0N5mFm3VHg=
+			uPdzKXJk/H+J1ZtndPZXgf3q/+Y8YnWyIB+juFmHQjU=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Zey-86-8U1-view-4Vp-fi-T3d~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5W/R7fccwitBnyFo8sNqbDHsGwk=
+			p9CQk1jwitLHua1Lu+ltorPjpJ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			XEypHQeneY2V2cnbVc7ZG6fkEhWOwOy1YvqIqmuD0vk=
+			mxHWzyhk959hzmshB3J+/lWB+YmiXNDCOGRZkldwFyc=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/Zey-86-8U1-view-4Vp-fi-T3d~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9DEIyN1u83H/9ELJ44YVIqxoUy8=
+			A4xVG+W6kOkhj5u9G5EKXfVemwA=
 			</data>
 			<key>hash2</key>
 			<data>
-			VDv+B8HW7yUhkPjiV4tHtK0vSGY64bYeO8b1USqK+PA=
+			A86unTWGGGYc7ApaBUDinXH8oVpiDrkY2ptMvg75CUA=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/fp4-WI-pNI-view-493-zV-xgC~ipad.nib/objects-8.0+.nib</key>
@@ -1277,103 +1593,312 @@
 			j2Y3xE2Xe8482+eCf8UihkAoSNT0bD1feUv5DxWA820=
 			</data>
 		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/mlh-8I-6pL-view-wwJ-eO-gwi~ipad.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fvGYnN+2GCzzx3upDbUZPzrBYW8=
+			</data>
+			<key>hash2</key>
+			<data>
+			tW+zvgA4tyyC+Os9hDs5PSoRV+ypM4bs5K1RDtV/yKM=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/mlh-8I-6pL-view-wwJ-eO-gwi~ipad.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cWOwYXUBgWzkBGc5zoF90jO44w0=
+			</data>
+			<key>hash2</key>
+			<data>
+			n0g3x+hzEGC+4GBiJiTFSJ/pLv1+4H5GauvlvtBKnk8=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/mlh-8I-6pL-view-wwJ-eO-gwi~iphone.nib/objects-8.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/r1E4MXl3wulb+urLYNapEqEnoU=
+			</data>
+			<key>hash2</key>
+			<data>
+			tz6OgHNaVfYAv6e1+B9ehK0+WRiO0qZ1UaNcpAQ+4NM=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/defaultUI.storyboardc/mlh-8I-6pL-view-wwJ-eO-gwi~iphone.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+SdSpPBO+qGWwIjzcIZ3STusRF4=
+			</data>
+			<key>hash2</key>
+			<data>
+			LQoAqD4hFyNcilPXeIQXGxvzyCwGlovGcmvojGzfF4w=
+			</data>
+		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/xFB-Aa-KOd-view-0za-vH-PjZ~ipad.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rp2TnUVepcmpkcka8V9/LQlE/98=
+			FPrlZoG7h3Iuw84RkWhVZul+9g8=
 			</data>
 			<key>hash2</key>
 			<data>
-			cz0TDDMTMMDXzq8e3ACgiIJDWcelWkMvy0iEaFM8DFE=
+			/b6HhT1CGeABRKzAPQGXfxqG80KzqOpyMoFhf+PcD0A=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/xFB-Aa-KOd-view-0za-vH-PjZ~ipad.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5V6Nb/hh67b2BfutRut9rncj+90=
+			IfsQVhQJYW4zwYgwvJB1LGZr7dE=
 			</data>
 			<key>hash2</key>
 			<data>
-			AedxDuG9QTeB+VVKj6N0cvMFpZn2IJWWxgbp2NT87FY=
+			7NIatNdD6CyYLcKXJtYtdckV4jrE5EL3aCMpR3KQtBY=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/xFB-Aa-KOd-view-0za-vH-PjZ~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h08NUtFXlPIx/zuHalqO6hQIxKo=
+			hd2Q4nfe9kSS0IQweY+pIPqnAdE=
 			</data>
 			<key>hash2</key>
 			<data>
-			WOt9MeY43CV7hKez0JZA5JwnPkDm1OvQBG3slvdSZXk=
+			kUJzTAr9sfXK1ivLT+mnVr1UzZiSYT2wzXh2H/kDGmg=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI.storyboardc/xFB-Aa-KOd-view-0za-vH-PjZ~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PI6NbjZjYuHSPjJDAuNdP0dn9OQ=
+			5ys7ZIe0gUGxA1LQT+blVNhQDsM=
 			</data>
 			<key>hash2</key>
 			<data>
-			kTohFTHpHxkFkf7L4ioiItIt0dFsQiHmUaTKThhidfA=
+			aNCU7za2tzvSwujJJtbMe68Qr9YMHe8LRujhGJf3Bi0=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI~ipad.storyboardc/Info-8.0+.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y9MF07gsm/TQ6+3VLXw5HbdKSks=
+			u6sAj6Eenmp9qvm8+lic2idNNds=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nvw53EuAk3TzPYkq4vCENQk+Xn4wwVOSXjHbxjz3TXs=
+			59dru4J8mZi3dzZ/xKcw0N6D0Uxlll2Gsxh4apbtnqQ=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI~ipad.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+Lc0Iw4NmHaTL3TjU0rPH+Z7khc=
+			u6sAj6Eenmp9qvm8+lic2idNNds=
 			</data>
 			<key>hash2</key>
 			<data>
-			m772KO4lOaezzqUdpjBGSwirRJMSPJAUfQC2ffTxHmE=
+			59dru4J8mZi3dzZ/xKcw0N6D0Uxlll2Gsxh4apbtnqQ=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI~iphone.storyboardc/Info-8.0+.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			By5ZOEP8g481ofwqLMBYHF9tE1c=
+			u6sAj6Eenmp9qvm8+lic2idNNds=
 			</data>
 			<key>hash2</key>
 			<data>
-			N8PWP9YCUJ2Q8W5Sd+rqZ7U/ZpG0BYI+1jDrH+366Fw=
+			59dru4J8mZi3dzZ/xKcw0N6D0Uxlll2Gsxh4apbtnqQ=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/defaultUI~iphone.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+Lc0Iw4NmHaTL3TjU0rPH+Z7khc=
+			u6sAj6Eenmp9qvm8+lic2idNNds=
 			</data>
 			<key>hash2</key>
 			<data>
-			m772KO4lOaezzqUdpjBGSwirRJMSPJAUfQC2ffTxHmE=
+			59dru4J8mZi3dzZ/xKcw0N6D0Uxlll2Gsxh4apbtnqQ=
 			</data>
 		</dict>
 		<key>humbleadminbase.bundle/humbleadminbase</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gw03Quz2gpCRKBRLlVUB7daqNpM=
+			Y4QDrKyZ+z1YckALzZFO3DNcVSI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SgDApNVbgGczLPat2lry/73vu2rUBMKFZktr73jiBjM=
+			5sYLsnh4HvB/gBrsmVgH5cpxlR4W5tvP/pJIg5S8+Fs=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/qq.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			duWDf6C3oWk7VoTre+QoAwoow5E=
+			</data>
+			<key>hash2</key>
+			<data>
+			iIfpLuAm8nR4cyFLIpcQ3a8jy7o6QB4mnFkwlHXQb8w=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/qq@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lNru/zB1lIQKzwhhnWuHKJQoETE=
+			</data>
+			<key>hash2</key>
+			<data>
+			8j8z5A4LdrewlGv1JHCMJ1tmMRAv6pJnUfbrQbRSIrA=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/qq@32px.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lNru/zB1lIQKzwhhnWuHKJQoETE=
+			</data>
+			<key>hash2</key>
+			<data>
+			8j8z5A4LdrewlGv1JHCMJ1tmMRAv6pJnUfbrQbRSIrA=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/qqLogin.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			duWDf6C3oWk7VoTre+QoAwoow5E=
+			</data>
+			<key>hash2</key>
+			<data>
+			iIfpLuAm8nR4cyFLIpcQ3a8jy7o6QB4mnFkwlHXQb8w=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/wechatLogin.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tbqY+eeynL4sxXu6HCN/RmI5Rfg=
+			</data>
+			<key>hash2</key>
+			<data>
+			YWxrw4ZDz71HYUzABhZyidKlbTuyefeukGPOOdY1c1k=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weibo.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IpSNk3JbfbRPKcxaYTteUayf978=
+			</data>
+			<key>hash2</key>
+			<data>
+			fOIxGE6qwW6fXXgs9UV4cN2nvv7kN20nUUr7LoWsbL8=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weibo@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/e1M+jqJURCqEz1LNU59ZltdBNA=
+			</data>
+			<key>hash2</key>
+			<data>
+			6JvaT2Ju/P0IEyG9WkPhho0YFEFTw1ZgOc8EB8nSqB8=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weibo@32px.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/e1M+jqJURCqEz1LNU59ZltdBNA=
+			</data>
+			<key>hash2</key>
+			<data>
+			6JvaT2Ju/P0IEyG9WkPhho0YFEFTw1ZgOc8EB8nSqB8=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weibo@48px.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qk447cMyy5Qe4X51pWlaKcgjEzI=
+			</data>
+			<key>hash2</key>
+			<data>
+			W2/PMHGCwvj9slmP1B6aaU/AsYbgvQgm2G/fI7VeNSI=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weibo@64px.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IpSNk3JbfbRPKcxaYTteUayf978=
+			</data>
+			<key>hash2</key>
+			<data>
+			fOIxGE6qwW6fXXgs9UV4cN2nvv7kN20nUUr7LoWsbL8=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weiboLogin.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IpSNk3JbfbRPKcxaYTteUayf978=
+			</data>
+			<key>hash2</key>
+			<data>
+			fOIxGE6qwW6fXXgs9UV4cN2nvv7kN20nUUr7LoWsbL8=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weixin.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tbqY+eeynL4sxXu6HCN/RmI5Rfg=
+			</data>
+			<key>hash2</key>
+			<data>
+			YWxrw4ZDz71HYUzABhZyidKlbTuyefeukGPOOdY1c1k=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weixin@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d2pGFYPpbDhr8sq3nyOKc3xHXBI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ro5J2nvcKqixjjtcZ1liiM6pvv1oPl7jIynNlz5uo5g=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weixin@32px.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d2pGFYPpbDhr8sq3nyOKc3xHXBI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ro5J2nvcKqixjjtcZ1liiM6pvv1oPl7jIynNlz5uo5g=
+			</data>
+		</dict>
+		<key>humbleadminbase.bundle/weixin@64px.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tbqY+eeynL4sxXu6HCN/RmI5Rfg=
+			</data>
+			<key>hash2</key>
+			<data>
+			YWxrw4ZDz71HYUzABhZyidKlbTuyefeukGPOOdY1c1k=
 			</data>
 		</dict>
 	</dict>

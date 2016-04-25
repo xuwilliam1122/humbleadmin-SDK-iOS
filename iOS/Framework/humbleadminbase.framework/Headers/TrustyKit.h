@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TrustyAuthConfig.h"
+#import "TrustyAppearance.h"
 
 /**
  *  TrustyKit 是「可信用户系统」的 UI 接口类。
@@ -33,5 +34,52 @@
  *  @param completionBlock Block 会在登录完成后执行，包含登录的结果。
  */
 + (void)smsLoginWithCompletion:(TrustyAuthenticationCompletion)completionBlock;
+
++ (void)LoginWithCompletion:(TrustyAuthenticationCompletion)completionBlock;
+
+///**
+// *  可以以用户自定义界面进行短信验证码登录。
+// *
+// *  @param appearance      设置界面和控件的各种属性，详见：TrustyAppearance.h。传入空即使用默认界面登录。
+// *  @param completionBlock Block 会在登录完成后执行，包含登录的结果。
+// */
+//+ (void)smsLoginWithCustomUI:(TrustyAppearance *)appearance
+//                  completion:(TrustyAuthenticationCompletion)completionBlock;
+
+#pragma mark 用户名密码登录
+
+/**
+ *  用户密码登录。
+ *
+ *  @param completionBlock Block 会在登录完成后执行，包含登录的结果。
+ */
+//+ (void)usernameLoginWithCompletion:(TrustyAuthenticationCompletion)completionBlock;
+
+///**
+// *  用户密码登录。
+// *
+// *  @param appearance      设置界面和控件的各种属性，详见：TrustyAppearance.h。传入空即使用默认界面登录。
+// *  @param completionBlock Block 会在登录完成后执行，包含登录的结果。
+// */
+//+ (void)usernameLoginWithCustomUI:(TrustyAppearance *)appearance
+//                       completion:(TrustyAuthenticationCompletion)completionBlock;
+
+#pragma mark 账户注册
+
+/**
+ *  账号注册。
+ *
+ *  @param completionBlock Block 会在注册完成后执行，包含登录的结果。
+ */
+//+ (void)registerWithCompletion:(TrustyAuthenticationCompletion)completionBlock;
+
+///**
+// *  账号注册。
+// *
+// *  @param appearance      设置界面和控件的各种属性，详见：TrustyAppearance.h。传入空即使用默认界面登录。
+// *  @param completionBlock Block 会在注册完成后执行，包含登录的结果。
+// */
+//+ (void)registerWithCustomUI:(TrustyAppearance *)appearance
+//                  completion:(TrustyAuthenticationCompletion)completionBlock;
 
 @end
