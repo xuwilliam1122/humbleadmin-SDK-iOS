@@ -34,28 +34,35 @@
 |+getAppID	|获取 `AppID`。|
 |+getAppSecret|获取 `AppSecret`。|
 
-
-
 ###TrustyAuthConfig.h###
 	这个类是设置终端用户登录方法，以及传入用户名所要调用的类，使用前需要进行对象实例化。
 |名称|使用方法|
 |---|---|
-|-init|	`TrustyAuthConfig` 对象的实例化方法，对象实例化之后，可以对立面的 `userName` 和 `authenticateType` 属性进行设置，</br>从而确立用户的登录名以及登录方式。|
+|-initWithAuthenticateType:userName:|`TrustyAuthConfig` 对象的实例化方法，需要传入 `userName` 和 `authenticateType` 属性进行登录设置。|
+|authenticateType|注册、登录、鉴权方式。|
+|userName|终端用户的用户名。|
 
 ###TrustyUser.h###
 	这个类是「可信 ID」的终端用户信返回类，开发者在调用用户登录方法时，传入初始化的该对象，请求成功后该对象就会附带有用户对应的信息包括 userID 、phoneNumber 和 email 三个属性。
 |名称|使用方法|
 |---|---|
-|-init|`TrustyUser` 对象的实例化方法，对象实例化之后，可以对里面的 `userID` 、`phoneNumber` 和 `email` 的属性进行读取。|
+|-init|`TrustyUser` 对象的实例化方法，对象实例化之后，可以对里面的 `userID` 、`phoneNumber` 、`emailAddress` 和 `userName` 的属性进行读取。|
+|userID|用户的 UserID 信息。|
+|phoneNumber|用户的手机号码信息。|
+|emailAddress|用户的邮箱信息。|
+|userName|用户注册后得到的用户名。|
 
 ###TrustySession.h###
 	这个类是「可信 ID」的请求方法接口类，该类中包含 authToken 、 authConfig 和 trustyUser 三个属性，在请求结束后，该类的属性中都会获取到相应的值。
 |名称|使用方法|
 |---|---|
-|-init|`TrustySession` 对象实例化方法，调用该类方法时需要先进行实例化。|
-|-authenticate:trustyUser:block:|用户登录请求的接口，需要传入用户的 `TrustyAuthConfig` 对象，</br>`TrustyUser` 对象（此项可以为 `nil`），</br>请求结束后会返回 `block` 信息，包括请求是否成功以及请求失败后的 `error` 信息。|
+|-initWithTrustyAuthConfig:|`TrustySession` 对象实例化方法，需要传入 `TrustyAuthConfig` 对象。|
+|-authenticate:block:|用户登录请求的接口，需要传入用户的 `TrustyUser` 对象（此项可以为 `nil`），</br>请求结束后会返回 `block` 信息，包括请求是否成功以及请求失败后的 `error` 信息。|
 |-authenticateVerify:block:|进行短信息验证码登录请求之后，对返回的验证码进行验证的接口，需要传入短信验证码，</br>请求结束后会返回 `block` 信息，，包括请求是否成功以及请求失败后的 `error` 信息。|
 |-logout |登出`可信ID`。|
+|authToken|向服务器进行登录请求时获取到的令牌。|
+|authConfig|登录申请成功后，用户的 `TrustyAuthConfig` 属性信息。|
+|trustyUser|登录申请成功后，用户的 `TrustyUser` 属性信息。|
 
 ###TrustyKit.h###
 	这个类是「可信 ID」的 UI 类，调用里面的方法，会自动绘制 UI 界面，来实现相对应的接口功能。
