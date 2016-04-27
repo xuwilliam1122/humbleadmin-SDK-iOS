@@ -20,10 +20,10 @@
 |README.md|说明文档。|
 
 ##使用说明##
-`SDK` 共有五个头文件，分别为 `Trusty.h` `TrustyAuthConfig.h` `TrustySession.h` `TrustyUser.h` `TrustyKit`</br>
+`SDK` 共有五个头文件，分别为 `Trusty.h` `TrustyAuthConfig.h` `TrustySession.h` `TrustyUser.h` `TrustyKit.h`</br>
 
 ###Trusty.h###
-	这个类中需要用户把从网站上获取到的项目信息在第一时间传给SDK。另外，实例化该类之后，可以获取终端用户之前东路的信息。
+	这个类中需要用户把从网站上获取到的项目信息在第一时间传给SDK。另外，实例化该类之后，可以获取终端用户之前登录的信息。
 	
 |名称|使用方法|
 |---|---|
@@ -58,7 +58,7 @@
 |---|---|
 |-initWithTrustyAuthConfig:|`TrustySession` 对象实例化方法，需要传入 `TrustyAuthConfig` 对象。|
 |-authenticate:block:|用户登录请求的接口，需要传入用户的 `TrustyUser` 对象（此项可以为 `nil`），</br>请求结束后会返回 `block` 信息，包括请求是否成功以及请求失败后的 `error` 信息。|
-|-authenticateVerify:block:|进行短信息验证码登录请求之后，对返回的验证码进行验证的接口，需要传入短信验证码，</br>请求结束后会返回 `block` 信息，，包括请求是否成功以及请求失败后的 `error` 信息。|
+|-authenticateVerify:block:|进行短信息验证码登录请求之后，对返回的验证码进行验证的接口，需要传入短信验证码，</br>请求结束后会返回 `block` 信息，包括请求是否成功以及请求失败后的 `error` 信息。|
 |-logout |登出`可信ID`。|
 |authToken|向服务器进行登录请求时获取到的令牌。|
 |authConfig|登录申请成功后，用户的 `TrustyAuthConfig` 属性信息。|
